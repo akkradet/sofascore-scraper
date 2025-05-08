@@ -887,10 +887,11 @@
       },
       "customId": "Tdbsqgb",
       "status": {
-        "code": 33,
-        "description": "Extra time halftime",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "aggregatedWinnerCode": 2,
       "homeTeam": {
         "name": "Fiorentina",
@@ -981,6 +982,7 @@
         "period2": 0,
         "normaltime": 2,
         "extra1": 0,
+        "extra2": 0,
         "overtime": 0,
         "aggregated": 3
       },
@@ -991,6 +993,7 @@
         "period2": 0,
         "normaltime": 1,
         "extra1": 1,
+        "extra2": 0,
         "overtime": 1,
         "aggregated": 4
       },
@@ -998,14 +1001,16 @@
         "injuryTime1": 3,
         "injuryTime2": 4,
         "injuryTime3": 2,
-        "currentPeriodStartTimestamp": 1746738268
+        "injuryTime4": 3,
+        "currentPeriodStartTimestamp": 1746739456
       },
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1746739296
+        "changeTimestamp": 1746740564
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1862,9 +1867,9 @@
       },
       "customId": "kobsWuc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Talleres",
@@ -1936,14 +1941,40 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1746741644
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1746739154
+        "changeTimestamp": 1746741653
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1951,8 +1982,16 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13640340,
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1746741644,
+        "extra": 540
+      },
       "slug": "libertad-talleres",
       "startTimestamp": 1746741600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2647,9 +2686,9 @@
       },
       "customId": "iobsXuc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Vélez Sarsfield",
@@ -2721,14 +2760,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1746741607
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1746737389
+        "changeTimestamp": 1746741653
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2736,8 +2791,16 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13640332,
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1746741607,
+        "extra": 540
+      },
       "slug": "olimpia-velez-sarsfield",
       "startTimestamp": 1746741600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2957,9 +3020,9 @@
       },
       "customId": "Ecdskak",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Racing de Montevideo",
@@ -3031,14 +3094,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1746741584
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1746736952
+        "changeTimestamp": 1746742970
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3046,8 +3120,16 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13640446,
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1746741584,
+        "extra": 540
+      },
       "slug": "racing-de-montevideo-huracan",
       "startTimestamp": 1746741600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4077,9 +4159,9 @@
       },
       "customId": "COsWwn",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Deportes Iquique",
@@ -4152,14 +4234,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1746741617
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1746739077
+        "changeTimestamp": 1746743031
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4167,8 +4260,16 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13640447,
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1746741617,
+        "extra": 540
+      },
       "slug": "deportes-iquique-atletico-mineiro",
       "startTimestamp": 1746741600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19136,7 +19237,7 @@
         ],
         "changeTimestamp": 1746737979
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13851447,
       "slug": "olympic-safi-mas-de-fes",
