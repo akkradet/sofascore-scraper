@@ -2971,7 +2971,7 @@
         ],
         "changeTimestamp": 1748804681
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -10552,11 +10552,11 @@
       },
       "customId": "fKrsjKr",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
-      "aggregatedWinnerCode": 2,
+      "aggregatedWinnerCode": 3,
       "homeTeam": {
         "name": "AFC Unirea 04 Slobozia",
         "slug": "afc-unirea-04-slobozia",
@@ -10627,28 +10627,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "aggregated": 1
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "aggregated": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
+        "period1": 0,
         "aggregated": 2
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 6,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748883648
+        "currentPeriodStartTimestamp": 1748887703
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1748884898
+        "changeTimestamp": 1748889015
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13916945,
       "varInProgress": {
@@ -10657,15 +10660,15 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748883648,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748887703,
         "extra": 540
       },
       "slug": "afc-unirea-04-slobozia-fc-voluntari",
       "previousLegEventId": 13916678,
       "startTimestamp": 1748883600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": true,
       "isEditor": false
@@ -20011,10 +20014,11 @@
       },
       "customId": "ElHisJlHi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Trebol FC",
         "slug": "trebol-fc",
@@ -20071,15 +20075,38 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 9,
+        "display": 9,
+        "period1": 4,
+        "period2": 5,
+        "normaltime": 9
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 2,
+        "period2": 6,
+        "normaltime": 8
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "injuryTime1": 0,
+        "injuryTime2": 0,
+        "currentPeriodStartTimestamp": 1748886354
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.injuryTime2",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1748878227
+        "changeTimestamp": 1748887542
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -20195,9 +20222,9 @@
       },
       "customId": "BlHisKlHi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Deportrio",
@@ -20255,15 +20282,31 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "normaltime": 2
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "initial": 0,
+        "max": 900,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1748888176
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1748878233
+        "changeTimestamp": 1748889240
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -20275,8 +20318,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 900,
+        "timestamp": 1748888176,
+        "extra": 540
+      },
       "slug": "sds-fc-deportrio",
       "startTimestamp": 1748888100,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -29210,6 +29261,8 @@
         "changeTimestamp": 1748800484
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13945696,
       "varInProgress": {
@@ -30433,8 +30486,8 @@
       },
       "customId": "eucsZaQb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -30508,31 +30561,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748883615
+        "currentPeriodStartTimestamp": 1748887313
       },
       "changes": {
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1748884630
+        "changeTimestamp": 1748889138
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30543,14 +30598,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748883615,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748887313,
         "extra": 540
       },
       "slug": "fc-stockholm-internazionale-afc-eskilstuna",
       "startTimestamp": 1748883600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30618,8 +30673,8 @@
       },
       "customId": "DKsnrcc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -30696,29 +30751,31 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748883620
+        "currentPeriodStartTimestamp": 1748887422
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1748883882
+        "changeTimestamp": 1748888718
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30729,14 +30786,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748883620,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748887422,
         "extra": 540
       },
       "slug": "fc-arlanda-gefle-if",
       "startTimestamp": 1748883600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30804,8 +30861,8 @@
       },
       "customId": "HMisTYH",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -30879,31 +30936,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748883702
+        "currentPeriodStartTimestamp": 1748887374
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1748884112
+        "changeTimestamp": 1748889261
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30914,14 +30973,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748883702,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748887374,
         "extra": 540
       },
       "slug": "ifk-haninge-sollentuna-ff",
       "startTimestamp": 1748883600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -32956,6 +33015,8 @@
         "changeTimestamp": 1748788712
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13939891,
       "varInProgress": {
