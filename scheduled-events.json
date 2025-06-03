@@ -663,9 +663,9 @@
       },
       "customId": "dnbsGxHc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Unión Española",
@@ -730,14 +730,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1748977258
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1748975111
+        "changeTimestamp": 1748977448
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -749,8 +765,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1748977258,
+        "extra": 540
+      },
       "slug": "deportes-limache-union-espanola",
       "startTimestamp": 1748977200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4026,8 +4050,8 @@
       },
       "customId": "REjsoFn",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4111,25 +4135,24 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1,
-        "normaltime": 1
+        "current": 6,
+        "display": 6,
+        "period1": 6,
+        "normaltime": 6
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
+        "injuryTime1": 0,
         "currentPeriodStartTimestamp": 1748975462
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
           "awayScore.period1",
-          "awayScore.normaltime"
+          "awayScore.normaltime",
+          "time.injuryTime1",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1748975691
+        "changeTimestamp": 1748978201
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4141,16 +4164,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748975462,
-        "extra": 540
-      },
       "slug": "austria-germany",
       "startTimestamp": 1748975400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4238,8 +4253,8 @@
       },
       "customId": "JZmsxXo",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4317,29 +4332,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
+        "injuryTime1": 2,
         "currentPeriodStartTimestamp": 1748975440
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1748975679
+        "changeTimestamp": 1748978274
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4351,16 +4364,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748975440,
-        "extra": 540
-      },
       "slug": "scotland-netherlands",
       "startTimestamp": 1748975400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4448,8 +4453,8 @@
       },
       "customId": "zPisKZm",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4530,26 +4535,32 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 1,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748973747
+        "currentPeriodStartTimestamp": 1748977458
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1748974321
+        "changeTimestamp": 1748977463
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4563,14 +4574,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748973747,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748977458,
         "extra": 540
       },
       "slug": "france-iceland",
       "startTimestamp": 1748973600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4658,8 +4669,8 @@
       },
       "customId": "xYcsdmp",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4740,28 +4751,31 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 2,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1748973651
+        "currentPeriodStartTimestamp": 1748977447
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1748974076
+        "changeTimestamp": 1748977451
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4775,14 +4789,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1748973651,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748977447,
         "extra": 540
       },
       "slug": "switzerland-norway",
       "startTimestamp": 1748973600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4870,10 +4884,11 @@
       },
       "customId": "CPisGlp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Portugal",
         "slug": "portugal",
@@ -4964,17 +4979,16 @@
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 7,
         "currentPeriodStartTimestamp": 1748973725
       },
       "changes": {
         "changes": [
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748975481
+        "changeTimestamp": 1748976916
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4986,16 +5000,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973725,
-        "extra": 540
-      },
       "slug": "belgium-portugal",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5083,10 +5089,11 @@
       },
       "customId": "pYcswXo",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Spain",
         "slug": "spain",
@@ -5177,17 +5184,16 @@
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1748973715
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748975506
+        "changeTimestamp": 1748976809
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5199,16 +5205,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973715,
-        "extra": 540
-      },
       "slug": "spain-england",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5375,11 +5373,11 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 6,
+        "display": 6,
         "period1": 4,
-        "period2": 0,
-        "normaltime": 4
+        "period2": 1,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 1,
@@ -5390,20 +5388,18 @@
       },
       "time": {
         "injuryTime1": 3,
+        "injuryTime2": 3,
         "initial": 2700,
         "max": 5400,
-        "extra": 540,
+        "extra": 720,
         "currentPeriodStartTimestamp": 1748975601
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "status.code",
-          "status.description",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1748975610
+        "changeTimestamp": 1748978392
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5420,7 +5416,7 @@
         "initial": 2700,
         "max": 5400,
         "timestamp": 1748975601,
-        "extra": 540
+        "extra": 720
       },
       "slug": "sweden-denmark",
       "startTimestamp": 1748971800,
@@ -5512,8 +5508,8 @@
       },
       "customId": "APispFn",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5591,27 +5587,32 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 4,
+        "period2": 0,
         "normaltime": 4
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1748971853
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1748975792
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.period2",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1748975025
+        "changeTimestamp": 1748978251
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5623,8 +5624,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1748975792,
+        "extra": 540
+      },
       "slug": "wales-italy",
       "startTimestamp": 1748971800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5712,10 +5721,11 @@
       },
       "customId": "HlpsZlp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Bosnia & Herzegovina",
         "slug": "bosnia-and-herzegovina",
@@ -5805,16 +5815,16 @@
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1748973753
       },
       "changes": {
         "changes": [
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748973825
+        "changeTimestamp": 1748976906
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5826,16 +5836,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973753,
-        "extra": 540
-      },
       "slug": "northern-ireland-bosnia-and-herzegovina",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5923,10 +5925,11 @@
       },
       "customId": "lcdsBPi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Poland",
         "slug": "poland",
@@ -6002,11 +6005,11 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
@@ -6016,19 +6019,17 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973793
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1748973799
+        "changeTimestamp": 1748976750
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -6039,16 +6040,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973793,
-        "extra": 540
-      },
       "slug": "poland-romania",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6136,10 +6129,11 @@
       },
       "customId": "qgosemp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Greece",
         "slug": "greece",
@@ -6228,20 +6222,15 @@
         "normaltime": 1
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973736
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748973739
+        "changeTimestamp": 1748976706
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -6252,16 +6241,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973736,
-        "extra": 540
-      },
       "slug": "turkiye-greece",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6349,10 +6330,11 @@
       },
       "customId": "DPisyXo",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ireland",
         "slug": "ireland",
@@ -6442,20 +6424,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 3,
         "currentPeriodStartTimestamp": 1748973816
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748973821
+        "changeTimestamp": 1748976768
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6467,16 +6445,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973816,
-        "extra": 540
-      },
       "slug": "slovenia-ireland",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6564,10 +6534,11 @@
       },
       "customId": "cLisamp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Finland",
         "slug": "finland",
@@ -6650,25 +6621,24 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1748973762
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748975548
+        "changeTimestamp": 1748976898
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6680,16 +6650,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973762,
-        "extra": 540
-      },
       "slug": "serbia-finland",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6777,10 +6739,11 @@
       },
       "customId": "PlpsMEq",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Hungary",
         "slug": "hungary",
@@ -6870,19 +6833,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 5,
         "currentPeriodStartTimestamp": 1748973876
       },
       "changes": {
         "changes": [
-          "awayScore.period2",
           "status.code",
           "status.description",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748973883
+        "changeTimestamp": 1748977146
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6894,16 +6854,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973876,
-        "extra": 540
-      },
       "slug": "belarus-hungary",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6991,10 +6943,11 @@
       },
       "customId": "cfdsBbA",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Albania",
         "slug": "albania",
@@ -7077,27 +7030,22 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973727
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "time.currentPeriodStart",
-          "awayScore.period2"
+          "status.type"
         ],
-        "changeTimestamp": 1748973733
+        "changeTimestamp": 1748976800
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -7109,16 +7057,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973727,
-        "extra": 540
-      },
       "slug": "albania-czechia",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7206,10 +7146,11 @@
       },
       "customId": "IZmsJlp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Croatia",
         "slug": "croatia",
@@ -7298,17 +7239,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973887
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748974673
+        "changeTimestamp": 1748977046
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -7319,16 +7258,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973887,
-        "extra": 540
-      },
       "slug": "croatia-ukraine",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7416,10 +7347,11 @@
       },
       "customId": "Mlpsbmp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Faroe Islands",
         "slug": "faroe-islands",
@@ -7501,27 +7433,22 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973826
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748973830
+        "changeTimestamp": 1748977206
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -7532,16 +7459,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973826,
-        "extra": 540
-      },
       "slug": "slovakia-faroe-islands",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7629,10 +7548,11 @@
       },
       "customId": "DqBbsqZCc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Gibraltar",
         "slug": "gibraltar",
@@ -7719,39 +7639,28 @@
         "normaltime": 4
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973853
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748973858
+        "changeTimestamp": 1748976844
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13139258,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973853,
-        "extra": 540
-      },
       "slug": "gibraltar-moldova",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7839,10 +7748,11 @@
       },
       "customId": "NEqshIBb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Andorra",
         "slug": "andorra",
@@ -7929,16 +7839,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973976
       },
       "changes": {
         "changes": [
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748974795
+        "changeTimestamp": 1748977055
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -7949,16 +7858,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973976,
-        "extra": 540
-      },
       "slug": "andorra-malta",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8046,10 +7947,11 @@
       },
       "customId": "NlpsxOhb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Georgia",
         "slug": "georgia",
@@ -8137,19 +8039,15 @@
         "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973846
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748974490
+        "changeTimestamp": 1748976894
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -8160,16 +8058,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973846,
-        "extra": 540
-      },
       "slug": "cyprus-georgia",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8257,10 +8147,11 @@
       },
       "customId": "UlpsXlp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kazakhstan",
         "slug": "kazakhstan",
@@ -8341,24 +8232,24 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
-        "period2": 2,
-        "normaltime": 2
+        "period2": 3,
+        "normaltime": 3
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973983
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1748975109
+        "changeTimestamp": 1748976938
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -8370,16 +8261,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973983,
-        "extra": 540
-      },
       "slug": "luxembourg-kazakhstan",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8467,10 +8350,11 @@
       },
       "customId": "ElpsyXid",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Liechtenstein",
         "slug": "liechtenstein",
@@ -8542,24 +8426,24 @@
         "normaltime": 2
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973708
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1748974826
+        "changeTimestamp": 1748976725
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -8570,16 +8454,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973708,
-        "extra": 540
-      },
       "slug": "liechtenstein-armenia",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8667,10 +8543,11 @@
       },
       "customId": "WlpsNjD",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Lithuania",
         "slug": "lithuania",
@@ -8759,17 +8636,15 @@
         "normaltime": 1
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748974154
       },
       "changes": {
         "changes": [
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748975636
+        "changeTimestamp": 1748977169
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -8780,16 +8655,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748974154,
-        "extra": 540
-      },
       "slug": "montenegro-lithuania",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8877,10 +8744,11 @@
       },
       "customId": "IlpsKlp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Bulgaria",
         "slug": "bulgaria",
@@ -8961,23 +8829,22 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973921
       },
       "changes": {
         "changes": [
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1748975197
+        "changeTimestamp": 1748977045
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -8989,16 +8856,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973921,
-        "extra": 540
-      },
       "slug": "estonia-bulgaria",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9086,10 +8945,11 @@
       },
       "customId": "VlpsLzac",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Latvia",
         "slug": "latvia",
@@ -9177,20 +9037,15 @@
         "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748974148
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1748974153
+        "changeTimestamp": 1748977138
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -9201,16 +9056,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748974148,
-        "extra": 540
-      },
       "slug": "kosovo-latvia",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11721,10 +11568,11 @@
       },
       "customId": "MUisvXi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "IF Karlstad Fotboll",
         "slug": "if-karlstad-fotboll",
@@ -11799,28 +11647,31 @@
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1748973649
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1748974378
+        "changeTimestamp": 1748976804
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11829,16 +11680,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1748973649,
-        "extra": 540
-      },
       "slug": "orebro-syrianska-bk-if-karlstad-fotboll",
       "startTimestamp": 1748970000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
