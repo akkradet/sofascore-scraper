@@ -5431,12 +5431,16 @@
       "homeScore": {
         "current": 4,
         "display": 4,
-        "period1": 1
+        "period1": 1,
+        "period2": 3,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 1
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 2,
@@ -5445,12 +5449,12 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "time.currentPeriodStart"
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1749495133
+        "changeTimestamp": 1749539133
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8312,9 +8316,9 @@
       },
       "customId": "lNcsXuj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "East Timor",
@@ -8392,11 +8396,31 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1749537240
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1749539940
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
