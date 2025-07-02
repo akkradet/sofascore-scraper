@@ -296,9 +296,9 @@
       },
       "customId": "HNsydb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Borussia Dortmund",
@@ -378,13 +378,33 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "normaltime": 2
       },
-      "hasGlobalHighlights": false,
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 2,
+        "currentPeriodStartTimestamp": 1751418046
+      },
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "time.injuryTime1"
+        ],
+        "changeTimestamp": 1751420874
+      },
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13385905,
@@ -3232,6 +3252,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14078496,
       "varInProgress": {
@@ -3491,10 +3512,11 @@
       },
       "customId": "mnbsxGX",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Audax Italiano",
@@ -3587,43 +3609,32 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1751411117
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2",
           "status.code",
           "status.description",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1751411124
+        "changeTimestamp": 1751414188
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13936867,
       "homeRedCards": 1,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1751411117,
-        "extra": 540
-      },
       "slug": "deportes-temuco-audax-italiano",
       "previousLegEventId": 13936860,
       "startTimestamp": 1751407200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3701,11 +3712,12 @@
       },
       "customId": "EPcsiPK",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "aggregatedWinnerCode": 3,
+      "winnerCode": 1,
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Ñublense",
         "slug": "nublense",
@@ -3780,33 +3792,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0,
-        "aggregated": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2,
+        "aggregated": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0,
         "aggregated": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1751410828
+        "injuryTime1": 3,
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1751414710
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1751410901
+        "changeTimestamp": 1751417790
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -3816,17 +3828,9 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1751410828,
-        "extra": 540
-      },
       "slug": "deportes-magallanes-nublense",
       "previousLegEventId": 13936866,
       "startTimestamp": 1751410800,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3904,10 +3908,11 @@
       },
       "customId": "jnbsGxHc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Deportes Limache",
         "slug": "deportes-limache",
@@ -3973,20 +3978,37 @@
         }
       },
       "homeScore": {
-        "aggregated": 3
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1,
+        "aggregated": 4
       },
       "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0,
         "aggregated": 1
       },
-      "time": {},
+      "time": {
+        "injuryTime1": 3,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1751420216
+      },
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1749464923
+        "changeTimestamp": 1751420251
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13938515,
@@ -3994,9 +4016,17 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1751420216,
+        "extra": 540
+      },
       "slug": "deportes-limache-cobreloa",
       "previousLegEventId": 13936870,
       "startTimestamp": 1751416200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4712,6 +4742,8 @@
         "changeTimestamp": 1751388892
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13342410,
       "varInProgress": {
@@ -5593,6 +5625,8 @@
         "changeTimestamp": 1751388694
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13494516,
       "varInProgress": {
@@ -6143,6 +6177,8 @@
         "changeTimestamp": 1751385226
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13336028,
       "homeRedCards": 1,
