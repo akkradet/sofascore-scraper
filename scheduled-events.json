@@ -11544,9 +11544,9 @@
       },
       "customId": "JAstU",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "AC Sparta Praha",
@@ -11625,11 +11625,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1751552403
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1751552410
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
