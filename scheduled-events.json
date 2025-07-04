@@ -557,7 +557,7 @@
         ],
         "changeTimestamp": 1751576520
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -7393,9 +7393,9 @@
       },
       "customId": "jrbsgjEb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Torpedo-BelAZ Zhodino",
@@ -7470,11 +7470,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1751635808
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1751635810
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7483,8 +7504,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1751635808,
+        "extra": 540
+      },
       "slug": "molodechno-2018-torpedo-belaz-zhodino",
       "startTimestamp": 1751635800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14077,9 +14106,9 @@
       },
       "customId": "IzcsMDo",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Deportivo La Guaira",
@@ -14156,7 +14185,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1751633586
       },
       "hasGlobalHighlights": false,
       "detailId": 1,
@@ -16442,10 +16476,11 @@
       },
       "customId": "XbbsMrc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "SV Wehen Wiesbaden",
         "slug": "sv-wehen-wiesbaden",
@@ -16522,27 +16557,34 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1751631060
+        "currentPeriodStartTimestamp": 1751633874
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1751631228
+        "changeTimestamp": 1751633875
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16551,16 +16593,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1751631060,
-        "extra": 540
-      },
       "slug": "tsg-hoffenheim-ii-u23-sv-wehen-wiesbaden",
       "startTimestamp": 1751626800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16645,8 +16679,8 @@
       },
       "customId": "dRsepr",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -16721,31 +16755,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 3,
+        "display": 3,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1751630674
+        "currentPeriodStartTimestamp": 1751634327
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
           "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.currentPeriodStart"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1751630677
+        "changeTimestamp": 1751635726
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16756,14 +16786,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1751630674,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1751634327,
         "extra": 540
       },
       "slug": "austria-klagenfurt-sturm-graz-ii",
       "startTimestamp": 1751630400,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16848,9 +16878,9 @@
       },
       "customId": "mUGbsYuGc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Royal Francs Borains",
@@ -16916,11 +16946,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1751634180
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1751635086
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16929,8 +16978,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1751634180,
+        "extra": 540
+      },
       "slug": "royal-francs-borains-rfc-seraing",
       "startTimestamp": 1751634000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -17188,9 +17245,9 @@
       },
       "customId": "LbbsYbb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Kickers Offenbach",
@@ -17258,11 +17315,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1751635976
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1751635978
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -17271,8 +17349,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1751635976,
+        "extra": 540
+      },
       "slug": "sv-07-elversberg-kickers-offenbach",
       "startTimestamp": 1751635800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
