@@ -5851,9 +5851,9 @@
       },
       "customId": "oznstfce",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "GV San José",
@@ -5921,14 +5921,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 4,
+        "currentPeriodStartTimestamp": 1752096632
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.injuryTime1",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1752095962
+        "changeTimestamp": 1752099583
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6803,9 +6818,9 @@
       },
       "customId": "kPsxdn",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "CSA",
@@ -6879,11 +6894,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1752098570
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1752099708
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6892,8 +6922,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1752098570,
+        "extra": 540
+      },
       "slug": "ferroviario-csa",
       "startTimestamp": 1752098400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7780,12 +7818,13 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "cardsCode"
         ],
-        "changeTimestamp": 1747822977
+        "changeTimestamp": 1752099507
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13887763,
@@ -10307,9 +10346,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1752099057
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13932579,
