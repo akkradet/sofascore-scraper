@@ -7571,9 +7571,9 @@
       },
       "customId": "kabsaTjc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Los Angeles FC",
@@ -7648,21 +7648,52 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 6,
+        "initial": 0,
+        "max": 2700,
+        "extra": 900,
+        "currentPeriodStartTimestamp": 1752115237
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.injuryTime1"
+        ],
+        "changeTimestamp": 1752117990
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
+      "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13916317,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1752115237,
+        "extra": 900
+      },
       "slug": "los-angeles-fc-colorado-rapids",
       "startTimestamp": 1752114300,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9462,10 +9493,11 @@
       },
       "customId": "fOsvP",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Bahia",
         "slug": "bahia",
@@ -9543,47 +9575,44 @@
       "homeScore": {
         "current": 2,
         "display": 2,
-        "period1": 2
+        "period1": 2,
+        "period2": 0,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 7,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1752111693
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1752114768
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period1",
-          "awayScore.period1"
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1752111696
+        "changeTimestamp": 1752114773
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14011922,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1752111693,
-        "extra": 540
-      },
       "slug": "fortaleza-bahia",
       "startTimestamp": 1752107400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9669,10 +9698,11 @@
       },
       "customId": "jOsbP",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Sport Recife",
         "slug": "sport-recife",
@@ -9748,45 +9778,42 @@
         }
       },
       "homeScore": {
-        "current": 0,
+        "current": 2,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0,
+        "penalties": 2
       },
       "awayScore": {
-        "current": 0,
+        "current": 4,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0,
+        "penalties": 4
       },
       "time": {
-        "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1752111466
+        "currentPeriodStartTimestamp": 1752115380
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.injuryTime1",
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1752112166
+        "changeTimestamp": 1752116283
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14011921,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1752111466,
-        "extra": 540
-      },
       "slug": "ceara-sport-recife",
       "startTimestamp": 1752107400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9958,7 +9985,7 @@
         ],
         "changeTimestamp": 1752110695
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": false,
       "hasEventPlayerHeatMap": true,
       "detailId": 4,
@@ -10042,10 +10069,11 @@
       },
       "customId": "kPisrzAc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 3,
       "homeTeam": {
         "name": "Vancouver Whitecaps",
         "slug": "vancouver-whitecaps",
@@ -10119,17 +10147,34 @@
         }
       },
       "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0,
         "aggregated": 2
       },
       "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0,
         "aggregated": 2
       },
-      "time": {},
+      "time": {
+        "injuryTime1": 1,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1752116937
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1752111048
+        "changeTimestamp": 1752117002
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -10141,9 +10186,17 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1752116937,
+        "extra": 540
+      },
       "slug": "valour-fc-vancouver-whitecaps",
       "previousLegEventId": 13887755,
       "startTimestamp": 1752112800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": true,
       "isEditor": false
@@ -12130,10 +12183,11 @@
       },
       "customId": "cabsmcKc",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Nashville SC",
         "slug": "nashville-sc",
@@ -12209,29 +12263,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 5,
+        "display": 5,
         "period1": 1,
-        "normaltime": 1
+        "period2": 4,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 2,
+        "period2": 0,
         "normaltime": 2
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 0,
-        "max": 2700,
-        "extra": 600,
-        "currentPeriodStartTimestamp": 1752109673
+        "injuryTime2": 2,
+        "currentPeriodStartTimestamp": 1752113405
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1752112387
+        "changeTimestamp": 1752116239
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -12243,16 +12299,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1752109673,
-        "extra": 600
-      },
       "slug": "nashville-sc-dc-united",
       "startTimestamp": 1752109200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
