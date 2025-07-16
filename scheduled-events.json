@@ -14112,8 +14112,8 @@
       },
       "customId": "TmbsEaq",
       "status": {
-        "code": 120,
-        "description": "AP",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 1,
@@ -14190,8 +14190,8 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
         "normaltime": 0,
@@ -14201,7 +14201,7 @@
         "penalties": 4
       },
       "awayScore": {
-        "current": 2,
+        "current": 0,
         "display": 0,
         "period1": 0,
         "period2": 0,
@@ -14215,17 +14215,19 @@
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1752668400
+        "currentPeriodStartTimestamp": 1752668587
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
           "homeScore.current",
-          "homeScore.penalties"
+          "homeScore.display",
+          "awayScore.current",
+          "time.currentPeriodStart",
+          "time.penaltiesStart"
         ],
-        "changeTimestamp": 1752670024
+        "changeTimestamp": 1752670387
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15132,10 +15134,11 @@
       },
       "customId": "ZmbslQc",
       "status": {
-        "code": 50,
-        "description": "Penalties",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Kyoto Sanga FC",
         "slug": "kyoto-sanga-fc",
@@ -15209,7 +15212,7 @@
         }
       },
       "homeScore": {
-        "current": 4,
+        "current": 7,
         "display": 3,
         "period1": 0,
         "period2": 1,
@@ -15217,10 +15220,10 @@
         "extra1": 0,
         "extra2": 2,
         "overtime": 2,
-        "penalties": 1
+        "penalties": 4
       },
       "awayScore": {
-        "current": 4,
+        "current": 6,
         "display": 3,
         "period1": 0,
         "period2": 1,
@@ -15228,7 +15231,7 @@
         "extra1": 2,
         "extra2": 0,
         "overtime": 2,
-        "penalties": 1
+        "penalties": 3
       },
       "time": {
         "periodLength": 2700,
@@ -15238,10 +15241,11 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.penalties"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1752670334
+        "changeTimestamp": 1752670720
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15252,7 +15256,6 @@
       },
       "slug": "yokohama-fc-kyoto-sanga-fc",
       "startTimestamp": 1752660000,
-      "lastPeriod": "penalties",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15929,8 +15932,8 @@
       },
       "customId": "ImbsfNi",
       "status": {
-        "code": 100,
-        "description": "Ended",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 2,
@@ -16035,10 +16038,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1752669431
+        "changeTimestamp": 1752672670
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -17444,7 +17447,7 @@
         ],
         "changeTimestamp": 1752611711
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979063,
       "awayRedCards": 1,
@@ -26373,8 +26376,8 @@
       },
       "customId": "djbsbpb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26454,26 +26457,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 0,
-        "currentPeriodStartTimestamp": 1752667249
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1752671118
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1752669969
+        "changeTimestamp": 1752673116
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -26485,8 +26494,431 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1752671118,
+        "extra": 540
+      },
       "slug": "paok-afc-ajax",
       "startTimestamp": 1752667200,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Club Friendly Games",
+        "slug": "club-friendly-games",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 1468,
+          "country": {},
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 1468,
+            "country": {},
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "विश्व",
+                "bn": "বিশ্ব"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 33558,
+          "hasPerformanceGraphFeature": false,
+          "id": 853,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 86,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडली गेम्स",
+            "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69580
+      },
+      "customId": "hmosabAc",
+      "status": {
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Khon Kaen United",
+        "slug": "khon-kaen-united",
+        "shortName": "Khon Kaen United",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 1909,
+        "nameCode": "KKU",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 312550,
+        "country": {
+          "alpha2": "TH",
+          "alpha3": "THA",
+          "name": "Thailand",
+          "slug": "thailand"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "خون كاين يونايتد"
+          },
+          "shortNameTranslation": {
+            "ar": "خون كاين يونايتد"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "BG Pathum United",
+        "slug": "bg-pathum-united",
+        "shortName": "Pathum Utd",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 9307,
+        "nameCode": "PAU",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 35607,
+        "country": {
+          "alpha2": "TH",
+          "alpha3": "THA",
+          "name": "Thailand",
+          "slug": "thailand"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بي جي باثوم يونايتد",
+            "ru": "Биг Патум Юнайтед"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1752672056
+      },
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
+        ],
+        "changeTimestamp": 1752672057
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14187587,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1752672056,
+        "extra": 540
+      },
+      "slug": "khon-kaen-united-bg-pathum-united",
+      "startTimestamp": 1752667200,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Club Friendly Games",
+        "slug": "club-friendly-games",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 1468,
+          "country": {},
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 1468,
+            "country": {},
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "विश्व",
+                "bn": "বিশ্ব"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 33558,
+          "hasPerformanceGraphFeature": false,
+          "id": 853,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 86,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडली गेम्स",
+            "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69580
+      },
+      "customId": "jbsVY",
+      "status": {
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Young Boys",
+        "slug": "young-boys",
+        "shortName": "Young Boys",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 191788,
+        "nameCode": "YB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 2445,
+        "country": {
+          "alpha2": "CH",
+          "alpha3": "CHE",
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يونج بويز",
+            "ru": "Янг Бойз",
+            "hi": "यंग बॉयज़",
+            "bn": "ইয়ং বয়েজ"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Huddersfield Town",
+        "slug": "huddersfield-town",
+        "shortName": "Huddersfield",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 14968,
+        "nameCode": "HUD",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 59,
+        "country": {
+          "alpha2": "EN",
+          "alpha3": "ENG",
+          "name": "England",
+          "slug": "england"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هيديرسفيلد تاون",
+            "ru": "Хаддерсфилд Таун",
+            "hi": "हड्डल्सफील्ड टाउन"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1752670880
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1752670880
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14096850,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1752670880,
+        "extra": 540
+      },
+      "slug": "young-boys-huddersfield-town",
+      "startTimestamp": 1752670800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
