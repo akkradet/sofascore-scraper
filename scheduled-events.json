@@ -3014,10 +3014,11 @@
       },
       "customId": "pYcsAPi",
       "status": {
-        "code": 42,
-        "description": "2nd extra",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "England",
         "slug": "england",
@@ -3093,14 +3094,14 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
         "period2": 1,
         "normaltime": 1,
         "extra1": 0,
-        "extra2": 0,
-        "overtime": 0
+        "extra2": 1,
+        "overtime": 1
       },
       "awayScore": {
         "current": 1,
@@ -3116,16 +3117,16 @@
         "injuryTime1": 1,
         "injuryTime2": 7,
         "injuryTime3": 0,
-        "initial": 6300,
-        "max": 7200,
-        "extra": 540,
+        "injuryTime4": 3,
         "currentPeriodStartTimestamp": 1753219119
       },
       "changes": {
         "changes": [
-          "awayScore.extra2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1753219207
+        "changeTimestamp": 1753220248
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3137,16 +3138,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "ET-",
-        "initial": 6300,
-        "max": 7200,
-        "timestamp": 1753219119,
-        "extra": 540
-      },
       "slug": "italy-england",
       "startTimestamp": 1753210800,
-      "lastPeriod": "extra2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3221,10 +3214,11 @@
       },
       "customId": "jaksBnB",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 2,
       "homeTeam": {
         "name": "Cerro Largo",
         "slug": "cerro-largo",
@@ -3300,15 +3294,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0,
+        "aggregated": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1,
+        "aggregated": 1
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753221608
+      },
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1753219502
+        "changeTimestamp": 1753222675
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3320,9 +3331,17 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1753221608,
+        "extra": 540
+      },
       "slug": "central-cordoba-cerro-largo",
       "previousLegEventId": 13955157,
       "startTimestamp": 1753221600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": true,
       "isEditor": false
@@ -3964,9 +3983,9 @@
       },
       "customId": "oWcsJRp",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Operário-PR",
@@ -4044,14 +4063,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753221605
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1753218712
+        "changeTimestamp": 1753221793
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4063,8 +4098,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1753221605,
+        "extra": 540
+      },
       "slug": "operario-pr-atletico-goianiense",
       "startTimestamp": 1753221600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4231,9 +4274,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753222792
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13616244,
@@ -4881,8 +4929,8 @@
       },
       "customId": "lxcsZXbe",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4964,28 +5012,28 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 0,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1753218027
+        "currentPeriodStartTimestamp": 1753221993
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1753218339
+        "changeTimestamp": 1753222070
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4999,14 +5047,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1753218027,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1753221993,
         "extra": 540
       },
       "slug": "alianza-valledupar-fc-deportes-tolima",
       "startTimestamp": 1753218000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9305,8 +9353,8 @@
       },
       "customId": "GHtszanc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9384,29 +9432,32 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2,
-        "normaltime": 2
+        "current": 7,
+        "display": 7,
+        "period1": 5,
+        "period2": 1,
+        "normaltime": 6
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 1,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1753218008
+        "currentPeriodStartTimestamp": 1753221697
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1753218944
+        "changeTimestamp": 1753223146
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -9420,14 +9471,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1753218008,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1753221697,
         "extra": 540
       },
       "slug": "bolivia-colombia",
       "startTimestamp": 1753218000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13143,6 +13194,8 @@
         "changeTimestamp": 1753192995
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14039778,
       "varInProgress": {
@@ -16124,7 +16177,7 @@
         ],
         "changeTimestamp": 1753216634
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979125,
       "varInProgress": {
@@ -16326,7 +16379,7 @@
         ],
         "changeTimestamp": 1753216415
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979127,
       "varInProgress": {
@@ -17732,7 +17785,7 @@
         ],
         "changeTimestamp": 1753216616
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979142,
       "varInProgress": {
@@ -18133,7 +18186,7 @@
         ],
         "changeTimestamp": 1753216657
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979146,
       "varInProgress": {
@@ -18537,7 +18590,7 @@
         ],
         "changeTimestamp": 1753217267
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13979151,
       "varInProgress": {
