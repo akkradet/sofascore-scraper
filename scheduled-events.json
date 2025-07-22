@@ -84,9 +84,9 @@
       },
       "customId": "UUsxdc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "KuPS",
@@ -165,14 +165,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753196389
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1753192395
+        "changeTimestamp": 1753197654
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -183,8 +198,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1753196389,
+        "extra": 540
+      },
       "slug": "kairat-almaty-kups",
       "startTimestamp": 1753196400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -360,9 +383,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753196048
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14028285,
@@ -548,9 +576,13 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753196533
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14028252,
@@ -6881,15 +6913,15 @@
         "normaltime": 1
       },
       "time": {
-        "injuryTime1": 0,
+        "injuryTime1": 1,
         "injuryTime2": 8,
         "currentPeriodStartTimestamp": 1753121055
       },
       "changes": {
         "changes": [
-          "time.injuryTime2"
+          "time.injuryTime1"
         ],
-        "changeTimestamp": 1753124278
+        "changeTimestamp": 1753196996
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -12929,7 +12961,7 @@
         ],
         "changeTimestamp": 1753192565
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14041363,
       "varInProgress": {
@@ -19485,9 +19517,9 @@
       },
       "customId": "FebsRQGg",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Avellino",
@@ -19564,11 +19596,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753198111
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1753198207
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -19577,8 +19626,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1753198111,
+        "extra": 540
+      },
       "slug": "napoli-u20-avellino",
       "startTimestamp": 1753194600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25055,6 +25112,212 @@
       },
       "slug": "milan-arsenal",
       "startTimestamp": 1753270200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "U23 Friendly Games",
+        "slug": "u23-friendly-games",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 1468,
+          "country": {},
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "U23 Friendly Games",
+          "slug": "u23-friendly-games",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 1468,
+            "country": {},
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "विश्व",
+                "bn": "বিশ্ব"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 2068,
+          "hasPerformanceGraphFeature": false,
+          "id": 1072,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية تحت 23 سنة",
+              "hi": "अंडर-23 फ्रेंडली गेम्स",
+              "bn": "আন্ডার23 ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 6573
+      },
+      "season": {
+        "name": "U23 Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69586
+      },
+      "roundInfo": {
+        "round": 1
+      },
+      "customId": "UGusjHu",
+      "status": {
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Uzbekistan U23",
+        "slug": "uzbekistan-u23",
+        "shortName": "Uzbekistan U23",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 25169,
+        "nameCode": "UZB",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 49109,
+        "country": {
+          "alpha2": "UZ",
+          "alpha3": "UZB",
+          "name": "Uzbekistan",
+          "slug": "uzbekistan"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أوزبكستان تحت 23",
+            "ru": "Узбекистан U23",
+            "hi": "उज़्बेकिस्तान U23"
+          },
+          "shortNameTranslation": {
+            "ar": "أوزبكستان تحت 23"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Saudi Arabia U23",
+        "slug": "saudi-arabia-u23",
+        "shortName": "Saudi Arabia U23",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 7647,
+        "nameCode": "SAU",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 49094,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "السعودية تحت 23",
+            "ru": "Саудовская аравия U23",
+            "hi": "सऊदी अरबिया U23"
+          },
+          "shortNameTranslation": {
+            "ar": "السعودية تحت 23"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753198158
+      },
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1753198158
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14243919,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1753198158,
+        "extra": 540
+      },
+      "slug": "uzbekistan-u23-saudi-arabia-u23",
+      "startTimestamp": 1753198200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
