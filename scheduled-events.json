@@ -2919,7 +2919,7 @@
         ],
         "changeTimestamp": 1753296888
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -3019,10 +3019,11 @@
       },
       "customId": "znbsmuc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Shelbourne",
         "slug": "shelbourne",
@@ -3107,21 +3108,19 @@
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 3
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1753300169
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1753302506
+        "changeTimestamp": 1753303146
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -3132,16 +3131,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753300169,
-        "extra": 540
-      },
       "slug": "qarabag-shelbourne",
       "startTimestamp": 1753296300,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4479,10 +4470,11 @@
       },
       "customId": "TccsAuw",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "FK Budućnost Podgorica",
         "slug": "fk-buducnost-podgorica",
@@ -4578,16 +4570,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1753300976
       },
       "changes": {
         "changes": [
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1753301317
+        "changeTimestamp": 1753304003
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -4598,16 +4589,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753300976,
-        "extra": 540
-      },
       "slug": "fc-milsami-orhei-fk-buducnost-podgorica",
       "startTimestamp": 1753297200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4914,8 +4897,8 @@
       },
       "customId": "REjswXo",
       "status": {
-        "code": 7,
-        "description": "2nd half",
+        "code": 42,
+        "description": "2nd extra",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4997,28 +4980,36 @@
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "normaltime": 0
+        "normaltime": 0,
+        "extra1": 0,
+        "extra2": 0,
+        "overtime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
-        "normaltime": 0
+        "normaltime": 0,
+        "extra1": 0,
+        "extra2": 1,
+        "overtime": 1
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
+        "injuryTime2": 4,
+        "injuryTime3": 1,
+        "initial": 6300,
+        "max": 7200,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1753300895
+        "currentPeriodStartTimestamp": 1753305287
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "awayScore.extra2",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1753300971
+        "changeTimestamp": 1753305953
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5031,15 +5022,15 @@
         "awayTeam": false
       },
       "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753300895,
+        "prefix": "ET-",
+        "initial": 6300,
+        "max": 7200,
+        "timestamp": 1753305287,
         "extra": 540
       },
       "slug": "spain-germany",
       "startTimestamp": 1753297200,
-      "lastPeriod": "period2",
+      "lastPeriod": "extra2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5800,9 +5791,11 @@
           "homeScore.aggregated",
           "awayScore.aggregated"
         ],
-        "changeTimestamp": 1753302602
+        "changeTimestamp": 1753305904
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13955381,
@@ -6882,9 +6875,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753305156
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13472863,
@@ -7061,9 +7059,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753304902
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13472855,
@@ -8767,9 +8770,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753305359
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13616249,
@@ -8945,9 +8953,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1753305416
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13616253,
@@ -10365,9 +10378,9 @@
       },
       "customId": "hxcszMK",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Llaneros FC",
@@ -10443,13 +10456,33 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1753304407
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.normaltime"
+        ],
+        "changeTimestamp": 1753304837
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10458,8 +10491,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1753304407,
+        "extra": 540
+      },
       "slug": "llaneros-fc-boyaca-chico-fc",
       "startTimestamp": 1753304400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -17484,10 +17525,11 @@
       },
       "customId": "dXsCX",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Heart of Midlothian",
         "slug": "heart-of-midlothian",
@@ -17564,24 +17606,32 @@
       "homeScore": {
         "current": 4,
         "display": 4,
-        "period1": 2
+        "period1": 2,
+        "period2": 2,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1753300174
+        "currentPeriodStartTimestamp": 1753303085
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1753301798
+        "changeTimestamp": 1753303087
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -17590,16 +17640,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753300174,
-        "extra": 540
-      },
       "slug": "dumbarton-heart-of-midlothian",
       "startTimestamp": 1753296300,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -32572,10 +32614,11 @@
       },
       "customId": "dcsre",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Chorley FC",
         "slug": "chorley-fc",
@@ -32652,30 +32695,31 @@
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 0,
-        "period2": 2
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1753300077
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1753301655
+        "changeTimestamp": 1753302805
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32684,16 +32728,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753300077,
-        "extra": 540
-      },
       "slug": "chorley-fc-rochdale",
       "startTimestamp": 1753296300,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -32778,10 +32814,11 @@
       },
       "customId": "clbspLn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Fenerbahçe",
         "slug": "fenerbahce",
@@ -32858,11 +32895,11 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 4,
+        "display": 4,
         "period1": 2,
-        "period2": 0,
-        "normaltime": 2
+        "period2": 2,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 0,
@@ -32873,17 +32910,16 @@
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 2,
         "currentPeriodStartTimestamp": 1753301209
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1753301281
+        "changeTimestamp": 1753304038
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -32895,16 +32931,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1753301209,
-        "extra": 540
-      },
       "slug": "al-ittihad-fenerbahce",
       "startTimestamp": 1753297200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
