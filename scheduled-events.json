@@ -3080,8 +3080,8 @@
       },
       "customId": "uOnsCvx",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3176,25 +3176,29 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
-        "period1": 3,
-        "normaltime": 3
+        "current": 5,
+        "display": 5,
+        "period1": 4,
+        "period2": 0,
+        "normaltime": 4
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 10,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1755691520
+        "currentPeriodStartTimestamp": 1755695934
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1755694030
+        "changeTimestamp": 1755696888
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3202,21 +3206,21 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14248257,
-      "homeRedCards": 2,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1755691520,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1755695934,
         "extra": 540
       },
       "slug": "al-qadsiah-al-ahli",
       "startTimestamp": 1755691200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5194,10 +5198,11 @@
       },
       "customId": "rrbsXTn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Zhejiang",
         "slug": "zhejiang",
@@ -5286,11 +5291,11 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
@@ -5301,17 +5306,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 7,
         "currentPeriodStartTimestamp": 1755693631
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1755693810
+        "changeTimestamp": 1755696816
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5323,16 +5327,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1755693631,
-        "extra": 540
-      },
       "slug": "zhejiang-tianjin-jinmen-tiger",
       "startTimestamp": 1755689700,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13575,7 +13571,7 @@
         ],
         "changeTimestamp": 1755691137
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -13799,7 +13795,7 @@
         ],
         "changeTimestamp": 1755691237
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -19001,10 +18997,11 @@
       },
       "customId": "BrbsQZOd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Beijing Guoan",
         "slug": "beijing-guoan",
@@ -19092,36 +19089,34 @@
         }
       },
       "homeScore": {
-        "current": 3,
-        "display": 3,
+        "current": 7,
+        "display": 7,
         "period1": 3,
-        "period2": 0
+        "period2": 4,
+        "normaltime": 7
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1755693731
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755693731
+        "changeTimestamp": 1755696453
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -19131,16 +19126,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1755693731,
-        "extra": 540
-      },
       "slug": "yunnan-yukun-beijing-guoan",
       "startTimestamp": 1755689700,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
