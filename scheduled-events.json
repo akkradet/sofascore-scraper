@@ -14709,10 +14709,11 @@
       },
       "customId": "QNsjPi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Seattle Sounders FC",
         "slug": "seattle-sounders-fc",
@@ -14801,32 +14802,37 @@
         }
       },
       "homeScore": {
-        "current": 0,
+        "current": 4,
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "normaltime": 0
+        "normaltime": 0,
+        "penalties": 4
       },
       "awayScore": {
-        "current": 0,
+        "current": 3,
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "normaltime": 0
+        "normaltime": 0,
+        "penalties": 3
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 5,
         "currentPeriodStartTimestamp": 1755749743
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.display",
+          "homeScore.penalties",
+          "awayScore.display",
+          "awayScore.penalties"
         ],
-        "changeTimestamp": 1755749987
+        "changeTimestamp": 1755753554
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14834,20 +14840,13 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14389466,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1755749743,
-        "extra": 540
-      },
       "slug": "seattle-sounders-fc-club-puebla",
       "startTimestamp": 1755745200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14921,8 +14920,8 @@
       },
       "customId": "LNsnab",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -15015,31 +15014,32 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 6,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1755749797
+        "currentPeriodStartTimestamp": 1755753797
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1755749995
+        "changeTimestamp": 1755753860
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15053,14 +15053,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1755749797,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1755753797,
         "extra": 540
       },
       "slug": "la-galaxy-cf-pachuca",
       "startTimestamp": 1755747900,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30149,6 +30149,194 @@
       },
       "slug": "cf-pozuelo-de-alarcon-cd-toledo",
       "startTimestamp": 1755712800,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Club Friendly Games",
+        "slug": "club-friendly-games",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 1468,
+          "country": {},
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 1468,
+            "country": {},
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "विश्व",
+                "bn": "বিশ্ব"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 34939,
+          "hasPerformanceGraphFeature": false,
+          "id": 853,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 86,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडली गेम्स",
+            "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69580
+      },
+      "customId": "ynjdsDgvd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Teutonia Weiden",
+        "slug": "teutonia-weiden",
+        "shortName": "Teutonia Weiden",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 177,
+        "nameCode": "TWE",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 398173,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "ألمانيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تيتونيا فايدن"
+          },
+          "shortNameTranslation": {
+            "ar": "تيتونيا فايدن"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "FC Union Schafhausen",
+        "slug": "fc-union-schafhausen",
+        "shortName": "Union (S)",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 264,
+        "nameCode": "UNI",
+        "national": false,
+        "type": 0,
+        "id": 425328,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "ألمانيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إف سي يونيون شافهاوزن"
+          },
+          "shortNameTranslation": {
+            "ar": "يونيون (إس)"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14497699,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "slug": "fc-union-schafhausen-teutonia-weiden",
+      "startTimestamp": 1755797400,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
