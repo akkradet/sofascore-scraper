@@ -16494,6 +16494,8 @@
         "changeTimestamp": 1755743377
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14302299,
       "varInProgress": {
@@ -16698,6 +16700,8 @@
         "changeTimestamp": 1755743641
       },
       "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14302298,
       "varInProgress": {
@@ -17377,10 +17381,11 @@
       },
       "customId": "gtGbsgNrc",
       "status": {
-        "code": 90,
-        "description": "Abandoned",
-        "type": "canceled"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Ishøj IF",
         "slug": "ishoj-if",
@@ -17475,10 +17480,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1754152081
+        "changeTimestamp": 1755771311
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22714,14 +22718,9 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.normaltime",
-          "awayScore.normaltime",
-          "time.currentPeriodStart"
+          "cardsCode"
         ],
-        "changeTimestamp": 1755709057
+        "changeTimestamp": 1755770681
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23199,9 +23198,9 @@
       },
       "customId": "UbrcsKbtc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Marítimo U23",
@@ -23279,11 +23278,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755770366
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1755770370
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23292,8 +23312,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1755770366,
+        "extra": 540
+      },
       "slug": "maritimo-u23-sc-braga-u23",
       "startTimestamp": 1755770400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
