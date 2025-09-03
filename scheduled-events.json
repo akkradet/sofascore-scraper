@@ -79,9 +79,9 @@
       },
       "customId": "lVbsNkd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Seychelles",
@@ -157,14 +157,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1756904525
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1756903260
+        "changeTimestamp": 1756904734
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -175,8 +189,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1756904525,
+        "extra": 540
+      },
       "slug": "seychelles-gabon",
       "startTimestamp": 1756904400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1987,10 +2009,11 @@
       },
       "customId": "gVjsbRtc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kars 36 Spor",
         "slug": "kars-36-spor",
@@ -2077,42 +2100,34 @@
         "current": 1,
         "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1756901040
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1756903409
+        "changeTimestamp": 1756904391
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14522267,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1756901040,
-        "extra": 540
-      },
       "slug": "24-erzincanspor-kars-36-spor",
       "startTimestamp": 1756897200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2209,8 +2224,8 @@
       },
       "customId": "kHubsYQtc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2289,27 +2304,33 @@
       "homeScore": {
         "current": 4,
         "display": 4,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 4,
+        "period2": 0,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901040
+        "currentPeriodStartTimestamp": 1756904640
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756903288
+        "changeTimestamp": 1756904653
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2320,14 +2341,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901040,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904640,
         "extra": 540
       },
       "slug": "1461-trabzon-serhat-ardahan-spor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2424,8 +2445,8 @@
       },
       "customId": "wGfcsFPje",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2500,48 +2521,54 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900761
+        "currentPeriodStartTimestamp": 1756904647
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756903384
+        "changeTimestamp": 1756904647
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14522264,
-      "homeRedCards": 1,
+      "homeRedCards": 2,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900761,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904647,
         "extra": 540
       },
       "slug": "1926-bulancakspor-artvin-hopaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2638,8 +2665,8 @@
       },
       "customId": "JPcsvQUc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2719,27 +2746,31 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900799
+        "currentPeriodStartTimestamp": 1756904797
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1756903439
+        "changeTimestamp": 1756905410
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2750,14 +2781,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900799,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904797,
         "extra": 540
       },
       "slug": "alanya-1221-fk-muglaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2854,8 +2885,8 @@
       },
       "customId": "TiUdsViUd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2935,29 +2966,29 @@
       "homeScore": {
         "current": 2,
         "display": 2,
-        "period1": 2
+        "period1": 2,
+        "period2": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900790
+        "currentPeriodStartTimestamp": 1756904749
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756903480
+        "changeTimestamp": 1756906323
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2968,14 +2999,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900790,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904749,
         "extra": 540
       },
       "slug": "inegol-kafkas-genclikspor-aliaga-fk",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3072,8 +3103,8 @@
       },
       "customId": "BPUcsarie",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3150,31 +3181,36 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2
+        "current": 3,
+        "display": 3,
+        "period1": 3,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900890
+        "currentPeriodStartTimestamp": 1756904810
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756903152
+        "changeTimestamp": 1756904810
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3185,14 +3221,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900890,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904810,
         "extra": 540
       },
       "slug": "beykoz-ishakli-sf-arnavutkoy-belediye-fsk",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3289,8 +3325,8 @@
       },
       "customId": "iMXsajUd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3369,29 +3405,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 2,
+        "period2": 0,
+        "normaltime": 2
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900920
+        "currentPeriodStartTimestamp": 1756904640
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1756902991
+        "changeTimestamp": 1756905863
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3402,14 +3440,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900920,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904640,
         "extra": 540
       },
       "slug": "anadolu-universitesi-bartinspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3506,8 +3544,8 @@
       },
       "customId": "ppcsoMX",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3588,29 +3626,31 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 4,
-        "display": 4,
-        "period1": 4
+        "current": 6,
+        "display": 6,
+        "period1": 5,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901015
+        "currentPeriodStartTimestamp": 1756904794
       },
       "changes": {
         "changes": [
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1756903265
+        "changeTimestamp": 1756905848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3621,14 +3661,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901015,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904794,
         "extra": 540
       },
       "slug": "bayburt-ozel-idare-spor-giresunspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3725,8 +3765,8 @@
       },
       "customId": "oXXsMmYd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3804,31 +3844,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900852
+        "currentPeriodStartTimestamp": 1756904847
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1756902093
+        "changeTimestamp": 1756906032
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3839,14 +3881,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900852,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904847,
         "extra": 540
       },
       "slug": "antalya-kepezspor-bucak-belediyesi-oguzhanspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3943,8 +3985,8 @@
       },
       "customId": "ulbsODH",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4021,27 +4063,33 @@
       "homeScore": {
         "current": 2,
         "display": 2,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 2,
+        "period2": 0,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901040
+        "currentPeriodStartTimestamp": 1756904700
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756901367
+        "changeTimestamp": 1756904731
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4052,437 +4100,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901040,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904700,
         "extra": 540
       },
       "slug": "dersimspor-adanaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "Turkiye Kupasi, Qualification",
-        "slug": "turkiye-kupasi-qualification",
-        "category": {
-          "id": 46,
-          "country": {
-            "alpha2": "TR",
-            "alpha3": "TUR",
-            "name": "Türkiye",
-            "slug": "turkiye"
-          },
-          "name": "Turkey",
-          "slug": "turkey",
-          "sport": {
-            "name": "Football",
-            "slug": "football",
-            "id": 1
-          },
-          "flag": "turkey",
-          "alpha2": "TR",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "تركيا"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Türkiye Kupası",
-          "slug": "turkiye-kupasi",
-          "category": {
-            "id": 46,
-            "country": {
-              "alpha2": "TR",
-              "alpha3": "TUR",
-              "name": "Türkiye",
-              "slug": "turkiye"
-            },
-            "name": "Turkey",
-            "slug": "turkey",
-            "sport": {
-              "name": "Football",
-              "slug": "football",
-              "id": 1
-            },
-            "flag": "turkey",
-            "alpha2": "TR",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "تركيا"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 13962,
-          "id": 96,
-          "hasPerformanceGraphFeature": false,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "كأس تركيا",
-              "hi": "तुर्किये कपासी",
-              "bn": "তুর্কিয়ে কুপাসি"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 464,
-        "id": 22735,
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "كأس تركيا، التصفيات",
-            "hi": "तुर्किये कुपासी, क्वालिफिकेशन",
-            "bn": "তুরস্কিয়ে কুপাসি, কোয়ালিফিকেশন"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "season": {
-        "name": "Turkiye Kupasi 25/26",
-        "year": "25/26",
-        "editor": false,
-        "id": 81187
-      },
-      "roundInfo": {
-        "round": 1,
-        "name": "Round 1"
-      },
-      "customId": "nlbsEJtc",
-      "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
-      },
-      "homeTeam": {
-        "name": "Diyarbekir Spor AŞ",
-        "slug": "diyarbekir",
-        "shortName": "Diyarbekirspor",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 896,
-        "nameCode": "DSA",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "id": 3063,
-        "country": {
-          "alpha2": "TR",
-          "alpha3": "TUR",
-          "name": "Türkiye",
-          "slug": "turkiye"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "ديار بكر سبور آ ش"
-          },
-          "shortNameTranslation": {
-            "ar": "ديار بكرسبور"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Bitlis 1916 Futbol SK",
-        "slug": "bitlis-ozguzeldere-spor",
-        "shortName": "Özgüzelderespor",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 63,
-        "nameCode": "BZG",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "id": 296729,
-        "country": {
-          "alpha2": "TR",
-          "alpha3": "TUR",
-          "name": "Türkiye",
-          "slug": "turkiye"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "بتليس أوزغوزيلديريسبور"
-          },
-          "shortNameTranslation": {
-            "ar": "أوزغوزيلديريسبور"
-          }
-        }
-      },
-      "homeScore": {
-        "current": 0,
-        "display": 0
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0
-      },
-      "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
-      },
-      "changes": {
-        "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
-        ],
-        "changeTimestamp": 1756903147
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14522268,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
-      },
-      "slug": "bitlis-1916-futbol-sk-diyarbekir-spor-as",
-      "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "Turkiye Kupasi, Qualification",
-        "slug": "turkiye-kupasi-qualification",
-        "category": {
-          "id": 46,
-          "country": {
-            "alpha2": "TR",
-            "alpha3": "TUR",
-            "name": "Türkiye",
-            "slug": "turkiye"
-          },
-          "name": "Turkey",
-          "slug": "turkey",
-          "sport": {
-            "name": "Football",
-            "slug": "football",
-            "id": 1
-          },
-          "flag": "turkey",
-          "alpha2": "TR",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "تركيا"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Türkiye Kupası",
-          "slug": "turkiye-kupasi",
-          "category": {
-            "id": 46,
-            "country": {
-              "alpha2": "TR",
-              "alpha3": "TUR",
-              "name": "Türkiye",
-              "slug": "turkiye"
-            },
-            "name": "Turkey",
-            "slug": "turkey",
-            "sport": {
-              "name": "Football",
-              "slug": "football",
-              "id": 1
-            },
-            "flag": "turkey",
-            "alpha2": "TR",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "تركيا"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 13962,
-          "id": 96,
-          "hasPerformanceGraphFeature": false,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "كأس تركيا",
-              "hi": "तुर्किये कपासी",
-              "bn": "তুর্কিয়ে কুপাসি"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 464,
-        "id": 22735,
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "كأس تركيا، التصفيات",
-            "hi": "तुर्किये कुपासी, क्वालिफिकेशन",
-            "bn": "তুরস্কিয়ে কুপাসি, কোয়ালিফিকেশন"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "season": {
-        "name": "Turkiye Kupasi 25/26",
-        "year": "25/26",
-        "editor": false,
-        "id": 81187
-      },
-      "roundInfo": {
-        "round": 1,
-        "name": "Round 1"
-      },
-      "customId": "HJtcsBkFc",
-      "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
-      },
-      "homeTeam": {
-        "name": "Edirnespor",
-        "slug": "edirnespor",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 611,
-        "nameCode": "EDI",
-        "national": false,
-        "type": 0,
-        "id": 296732,
-        "country": {
-          "alpha2": "TR",
-          "alpha3": "TUR",
-          "name": "Türkiye",
-          "slug": "turkiye"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "إديرنسپور"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "awayTeam": {
-        "name": "Somaspor",
-        "slug": "somaspor",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 1015,
-        "nameCode": "SOM",
-        "national": false,
-        "type": 0,
-        "id": 325526,
-        "country": {
-          "alpha2": "TR",
-          "alpha3": "TUR",
-          "name": "Türkiye",
-          "slug": "turkiye"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "سوماسبور"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
-      },
-      "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "normaltime": 0
-      },
-      "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1756901040
-      },
-      "changes": {
-        "changes": [
-          "awayScore.current",
-          "awayScore.display"
-        ],
-        "changeTimestamp": 1756901484
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14522244,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901040,
-        "extra": 540
-      },
-      "slug": "somaspor-edirnespor",
-      "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4579,8 +4204,8 @@
       },
       "customId": "kDQbscjUd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4658,24 +4283,27 @@
       },
       "homeScore": {
         "current": 1,
-        "display": 1
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901117
+        "currentPeriodStartTimestamp": 1756904596
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1756901269
+        "changeTimestamp": 1756904600
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4686,14 +4314,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901117,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904596,
         "extra": 540
       },
       "slug": "tokat-belediyespor-erbaaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4790,8 +4418,8 @@
       },
       "customId": "kitbsFOje",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4869,27 +4497,29 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900787
+        "currentPeriodStartTimestamp": 1756904693
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756901660
+        "changeTimestamp": 1756905601
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4900,14 +4530,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900787,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904693,
         "extra": 540
       },
       "slug": "karadeniz-eregli-belediyespor-etimesgut-belediyespor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5004,8 +4634,8 @@
       },
       "customId": "ycGstQtd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5084,31 +4714,31 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2
+        "current": 4,
+        "display": 4,
+        "period1": 2,
+        "period2": 2
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900860
+        "currentPeriodStartTimestamp": 1756904848
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756903346
+        "changeTimestamp": 1756906166
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5119,14 +4749,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900860,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904848,
         "extra": 540
       },
       "slug": "bulvarspor-guzide-gebze-spor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5223,8 +4853,8 @@
       },
       "customId": "pNHbsgnFg",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5302,27 +4932,31 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900829
+        "currentPeriodStartTimestamp": 1756904831
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1756901140
+        "changeTimestamp": 1756906071
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5333,14 +4967,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900829,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904831,
         "extra": 540
       },
       "slug": "kahramanmaras-istiklalspor-kilis-belediyespor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5437,8 +5071,8 @@
       },
       "customId": "iitbsodGc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5516,31 +5150,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901117
+        "currentPeriodStartTimestamp": 1756904566
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "status.type",
           "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1756901121
+        "changeTimestamp": 1756905919
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5551,14 +5181,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901117,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904566,
         "extra": 540
       },
       "slug": "kahta-02-sk-iskenderuns",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5655,8 +5285,8 @@
       },
       "customId": "GafcsyqGg",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5737,29 +5367,34 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900959
+        "currentPeriodStartTimestamp": 1756905089
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756901356
+        "changeTimestamp": 1756905089
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5770,14 +5405,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900959,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756905089,
         "extra": 540
       },
       "slug": "kestel-cilekspor-usakspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5874,8 +5509,8 @@
       },
       "customId": "PlbsXpke",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5952,31 +5587,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756901117
+        "currentPeriodStartTimestamp": 1756904535
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
           "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.currentPeriodStart"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1756901119
+        "changeTimestamp": 1756905859
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5987,14 +5618,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756901117,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904535,
         "extra": 540
       },
       "slug": "kurtalanspor-sanliurfaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6091,8 +5722,8 @@
       },
       "customId": "nBxsVwie",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6169,38 +5800,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900978
+        "currentPeriodStartTimestamp": 1756904995
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.period1",
-          "awayScore.period1",
-          "time.currentPeriodStart",
-          "time.period1Start",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1756900978
+        "changeTimestamp": 1756906078
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6211,14 +5837,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900978,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904995,
         "extra": 540
       },
       "slug": "galata-sk-kirklarelispor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6315,8 +5941,8 @@
       },
       "customId": "jVjsXWGg",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6397,29 +6023,31 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 0,
-        "normaltime": 0
+        "current": 4,
+        "display": 4,
+        "period1": 3,
+        "period2": 0,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900920
+        "currentPeriodStartTimestamp": 1756904760
       },
       "changes": {
         "changes": [
           "homeScore.current",
           "homeScore.display"
         ],
-        "changeTimestamp": 1756901966
+        "changeTimestamp": 1756905688
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6430,14 +6058,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900920,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904760,
         "extra": 540
       },
       "slug": "malatya-yesilyurt-belediyespor-yeni-malatyaspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6534,8 +6162,8 @@
       },
       "customId": "nQtdsRXWd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6613,29 +6241,37 @@
         }
       },
       "homeScore": {
-        "current": 6,
-        "display": 6,
-        "period1": 0,
-        "normaltime": 0
+        "current": 7,
+        "display": 7,
+        "period1": 6,
+        "period2": 0,
+        "normaltime": 6
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900920
+        "currentPeriodStartTimestamp": 1756904700
       },
       "changes": {
         "changes": [
           "homeScore.current",
-          "homeScore.display"
+          "homeScore.display",
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756903357
+        "changeTimestamp": 1756904708
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6646,14 +6282,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900920,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904700,
         "extra": 540
       },
       "slug": "sirnak-petrolspor-mus-1984-musspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6750,8 +6386,8 @@
       },
       "customId": "WQtcsIdvg",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6827,26 +6463,29 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1756900794
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1756904520
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756903494
+        "changeTimestamp": 1756906080
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6855,8 +6494,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904520,
+        "extra": 540
+      },
       "slug": "yozgat-belediye-bozokspor-fatsa-belediyespor",
       "startTimestamp": 1756900800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6953,9 +6600,9 @@
       },
       "customId": "QdosUaGg",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
       },
       "homeTeam": {
         "name": "Çankırı FK",
@@ -7029,20 +6676,9 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {
-        "current": 0,
-        "display": 0
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0
-      },
-      "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1756900975
-      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
@@ -7054,7 +6690,7 @@
           "awayScore.display",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756900978
+        "changeTimestamp": 1756904741
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7063,16 +6699,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900975,
-        "extra": 540
-      },
       "slug": "cankiri-fk-ankara-demirspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7169,8 +6797,8 @@
       },
       "customId": "CdvgshwQg",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7249,29 +6877,34 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900927
+        "currentPeriodStartTimestamp": 1756904935
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1756901805
+        "changeTimestamp": 1756904935
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7282,14 +6915,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900927,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904935,
         "extra": 540
       },
       "slug": "siran-yildizspor-cayeli-spor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7386,8 +7019,8 @@
       },
       "customId": "opcswqGg",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7464,31 +7097,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900656
+        "currentPeriodStartTimestamp": 1756904639
       },
       "changes": {
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1756903354
+        "changeTimestamp": 1756905235
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7499,14 +7134,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900656,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904639,
         "extra": 540
       },
       "slug": "ezinespor-inegolspor",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7603,8 +7238,8 @@
       },
       "customId": "gitbsirie",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7683,27 +7318,31 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900923
+        "currentPeriodStartTimestamp": 1756904926
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1756902910
+        "changeTimestamp": 1756905173
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7714,14 +7353,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900923,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904926,
         "extra": 540
       },
       "slug": "inkilap-fsk-beyoglu-yeni-carsi-fas",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19896,8 +19535,8 @@
       },
       "customId": "FWsOcd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -19977,30 +19616,26 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 1,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1756900866
+        "currentPeriodStartTimestamp": 1756904672
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.currentPeriodStart"
+          "cardsCode"
         ],
-        "changeTimestamp": 1756900870
+        "changeTimestamp": 1756905853
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -20011,14 +19646,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1756900866,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1756904672,
         "extra": 540
       },
       "slug": "enisey-krasnoyarsk-shinnik-yaroslavl",
       "startTimestamp": 1756900800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -21472,10 +21107,11 @@
       },
       "customId": "Babsybb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Holstein Kiel",
         "slug": "holstein-kiel",
@@ -21558,30 +21194,31 @@
         "current": 1,
         "display": 1,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1756902898
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1756903421
+        "changeTimestamp": 1756905583
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -21590,16 +21227,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1756902898,
-        "extra": 540
-      },
       "slug": "holstein-kiel-fc-st-pauli",
       "startTimestamp": 1756899000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
