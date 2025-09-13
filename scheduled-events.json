@@ -12334,10 +12334,11 @@
       },
       "customId": "INsWN",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Mazatlán FC",
         "slug": "mazatlan-fc",
@@ -12421,24 +12422,26 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 4,
+        "display": 4,
         "period1": 2,
-        "period2": 0,
-        "normaltime": 2
+        "period2": 2,
+        "normaltime": 4
       },
       "time": {
         "injuryTime1": 7,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 8,
         "currentPeriodStartTimestamp": 1757736907
       },
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1757737086
+        "changeTimestamp": 1757740343
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -12450,16 +12453,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1757736907,
-        "extra": 540
-      },
       "slug": "mazatlan-fc-pumas-unam",
       "startTimestamp": 1757732400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -86782,6 +86777,9 @@
         "changeTimestamp": 1757699487
       },
       "hasGlobalHighlights": false,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14203083,
       "varInProgress": {
@@ -98585,16 +98583,9 @@
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "cardsCode"
         ],
-        "changeTimestamp": 1757705541
+        "changeTimestamp": 1757737831
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -117117,9 +117108,9 @@
       },
       "customId": "RmbsZMcc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Hokkaido Consadole Sapporo",
@@ -117194,11 +117185,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1757739803
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1757739807
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -117207,8 +117219,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1757739803,
+        "extra": 540
+      },
       "slug": "iwaki-fc-hokkaido-consadole-sapporo",
       "startTimestamp": 1757739600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
