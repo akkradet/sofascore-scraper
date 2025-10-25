@@ -29986,8 +29986,8 @@
       },
       "customId": "VibskUq",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -30066,29 +30066,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1,
-        "normaltime": 1
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 3,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761372013
+        "currentPeriodStartTimestamp": 1761375819
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1761372488
+        "changeTimestamp": 1761375885
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -30102,14 +30105,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761372013,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761375819,
         "extra": 540
       },
       "slug": "melbourne-city-perth-glory",
       "startTimestamp": 1761372000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -32649,9 +32652,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1761374339
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13522655,
@@ -44729,10 +44737,11 @@
       },
       "customId": "XmbsJFn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "FC Tokyo",
         "slug": "fc-tokyo",
@@ -44806,32 +44815,31 @@
         }
       },
       "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 0,
+        "period2": 3,
+        "normaltime": 3
+      },
+      "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 0,
         "period2": 1,
         "normaltime": 1
       },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "period2": 0,
-        "normaltime": 0
-      },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 5,
         "currentPeriodStartTimestamp": 1761372381
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761372734
+        "changeTimestamp": 1761375595
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -44843,16 +44851,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372381,
-        "extra": 540
-      },
       "slug": "fagiano-okayama-fc-tokyo",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -44949,10 +44949,11 @@
       },
       "customId": "PmbslQc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Kashiwa Reysol",
         "slug": "kashiwa-reysol",
@@ -45027,11 +45028,11 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 2,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
@@ -45042,17 +45043,16 @@
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 4,
         "currentPeriodStartTimestamp": 1761372285
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761373869
+        "changeTimestamp": 1761375256
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45064,16 +45064,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372285,
-        "extra": 540
-      },
       "slug": "yokohama-fc-kashiwa-reysol",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -45170,10 +45162,11 @@
       },
       "customId": "JmbsZmb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Kyoto Sanga FC",
         "slug": "kyoto-sanga-fc",
@@ -45254,24 +45247,26 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1761372519
       },
       "changes": {
         "changes": [
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761372586
+        "changeTimestamp": 1761375639
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45283,16 +45278,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372519,
-        "extra": 540
-      },
       "slug": "kyoto-sanga-fc-kashima-antlers",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -45389,10 +45376,11 @@
       },
       "customId": "LmbsNmb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Nagoya Grampus",
         "slug": "nagoya-grampus",
@@ -45474,25 +45462,26 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 1,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 4,
         "currentPeriodStartTimestamp": 1761372432
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761373259
+        "changeTimestamp": 1761375407
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45504,16 +45493,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372432,
-        "extra": 540
-      },
       "slug": "gamba-osaka-nagoya-grampus",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -45610,10 +45591,11 @@
       },
       "customId": "ImbsOmb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Shimizu S-Pulse",
         "slug": "shimizu-s-pulse",
@@ -45703,17 +45685,16 @@
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1761372372
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761372499
+        "changeTimestamp": 1761375510
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45725,16 +45706,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372372,
-        "extra": 540
-      },
       "slug": "tokyo-verdy-shimizu-s-pulse",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -45831,10 +45804,11 @@
       },
       "customId": "VmbsjNr",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Urawa Red Diamonds",
         "slug": "urawa-red-diamonds",
@@ -45926,17 +45900,14 @@
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 3,
         "currentPeriodStartTimestamp": 1761372378
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1761372556
+        "changeTimestamp": 1761375295
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45948,16 +45919,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372378,
-        "extra": 540
-      },
       "slug": "machida-zelvia-urawa-red-diamonds",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -46054,10 +46017,11 @@
       },
       "customId": "KmbsMmb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Yokohama F. Marinos",
         "slug": "yokohama-f-marinos",
@@ -46133,32 +46097,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 0,
+        "display": 0,
         "period1": 0,
         "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 9,
         "currentPeriodStartTimestamp": 1761372582
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761373815
+        "changeTimestamp": 1761375955
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -46170,16 +46133,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372582,
-        "extra": 540
-      },
       "slug": "yokohama-marinos-sanfrecce-hiroshima",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -46276,8 +46231,8 @@
       },
       "customId": "QmbsCcc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -46358,26 +46313,28 @@
         "current": 2,
         "display": 2,
         "period1": 2,
+        "period2": 0,
         "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 5,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761372189
+        "currentPeriodStartTimestamp": 1761376158
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1761373604
+        "changeTimestamp": 1761376287
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -46391,14 +46348,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761372189,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761376158,
         "extra": 540
       },
       "slug": "kawasaki-frontale-cerezo-osaka",
       "startTimestamp": 1761372000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -55369,10 +55326,11 @@
       },
       "customId": "iNcsXcd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Jeonbuk Hyundai Motors",
         "slug": "jeonbuk-hyundai-motors",
@@ -55457,21 +55415,19 @@
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 1,
-        "normaltime": 2
+        "period2": 2,
+        "normaltime": 3
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761372165
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761373757
+        "changeTimestamp": 1761375270
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -55481,13 +55437,6 @@
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372165,
-        "extra": 540
       },
       "streamContentId": 2022487,
       "streamContentGeoRestrictions": [
@@ -55500,7 +55449,6 @@
       ],
       "slug": "gimcheon-sangmu-fc-jeonbuk-hyundai-motors",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -55982,10 +55930,11 @@
       },
       "customId": "AdnsmDu",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Gwangju FC",
         "slug": "gwangju-fc",
@@ -56074,19 +56023,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761372443
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type"
         ],
-        "changeTimestamp": 1761372444
+        "changeTimestamp": 1761375939
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -56096,13 +56041,6 @@
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372443,
-        "extra": 540
       },
       "streamContentId": 2022493,
       "streamContentGeoRestrictions": [
@@ -56115,7 +56053,6 @@
       ],
       "slug": "gwangju-fc-fc-anyang",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -56295,9 +56232,13 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1761374063
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14924011,
@@ -56612,10 +56553,11 @@
       },
       "customId": "bddszdDb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Seongnam FC",
         "slug": "seongnam-fc",
@@ -56695,26 +56637,34 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0
+        "period1": 0,
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "injuryTime1": 5,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761372319
+        "injuryTime2": 5,
+        "currentPeriodStartTimestamp": 1761375418
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761372669
+        "changeTimestamp": 1761375422
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56723,16 +56673,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372319,
-        "extra": 540
-      },
       "slug": "hwaseong-fc-seongnam-fc",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -56829,10 +56771,11 @@
       },
       "customId": "Tcdscdd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Suwon Samsung Bluewings",
         "slug": "suwon-samsung-bluewings",
@@ -56910,26 +56853,34 @@
       "homeScore": {
         "current": 2,
         "display": 2,
-        "period1": 1
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 6,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761372608
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1761375819
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761373633
+        "changeTimestamp": 1761375821
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56938,16 +56889,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372608,
-        "extra": 540
-      },
       "slug": "suwon-samsung-bluewings-jeonnam-dragons",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -67708,7 +67651,9 @@
         "changeTimestamp": 1761328332
       },
       "hasGlobalHighlights": false,
-      "hasEventPlayerStatistics": false,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14079224,
@@ -87734,6 +87679,7 @@
         "description": "Ended",
         "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Finland",
         "slug": "finland",
@@ -103826,6 +103772,9 @@
         "changeTimestamp": 1761337632
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14302593,
       "varInProgress": {
@@ -108326,10 +108275,11 @@
       },
       "customId": "mpcsavX",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Fujieda MYFC",
         "slug": "fujieda-myfc",
@@ -108402,11 +108352,11 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 1,
@@ -108416,21 +108366,15 @@
         "normaltime": 1
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761372480
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "status.type"
         ],
-        "changeTimestamp": 1761372484
+        "changeTimestamp": 1761375386
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -108439,16 +108383,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761372480,
-        "extra": 540
-      },
       "slug": "fujieda-myfc-ventforet-kofu",
       "startTimestamp": 1761368400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -122068,9 +122004,9 @@
       },
       "customId": "aUgbseUgb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Stallion Laguna",
@@ -122143,11 +122079,26 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761375616
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1761376715
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -122156,8 +122107,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761375616,
+        "extra": 540
+      },
       "slug": "stallion-laguna-philippine-army",
       "startTimestamp": 1761375600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
