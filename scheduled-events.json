@@ -827,7 +827,7 @@
         ],
         "changeTimestamp": 1762293238
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -6867,9 +6867,9 @@
       },
       "customId": "qzrsKmG",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Benfica U19",
@@ -6947,14 +6947,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340407,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1762337927
+        "changeTimestamp": 1762341666
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -6965,8 +6982,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340407,
+        "extra": 540
+      },
       "slug": "benfica-u19-bayer-leverkusen-u19",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7058,9 +7083,9 @@
       },
       "customId": "zcLsExWb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Qarabağ U19",
@@ -7136,14 +7161,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340513,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1762337581
+        "changeTimestamp": 1762340517
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -7154,8 +7201,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340513,
+        "extra": 540
+      },
       "slug": "qarabag-u19-chelsea-u19",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7329,9 +7384,13 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762341174
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14596271,
@@ -9065,12 +9124,12 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "cardsCode"
         ],
-        "changeTimestamp": 1761397954
+        "changeTimestamp": 1762339998
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14596354,
@@ -9459,12 +9518,12 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "cardsCode"
         ],
-        "changeTimestamp": 1761397952
+        "changeTimestamp": 1762340773
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14596346,
@@ -25257,8 +25316,8 @@
       },
       "customId": "Wmbsddd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -25337,29 +25396,32 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1762336854,
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 2,
+        "currentPeriodStartTimestamp": 1762340644,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1762337677
+        "changeTimestamp": 1762341792
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -25373,14 +25435,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762336854,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1762340644,
         "extra": 540
       },
       "slug": "ulsan-hd-vissel-kobe",
       "startTimestamp": 1762336800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25546,9 +25608,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762340915
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14466106,
@@ -27362,9 +27429,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762340998
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14461767,
@@ -27540,9 +27612,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762340645
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14461758,
@@ -30127,7 +30204,7 @@
         ],
         "changeTimestamp": 1762292323
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14391266,
       "varInProgress": {
@@ -32960,9 +33037,9 @@
       },
       "customId": "kyXsJLic",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Gokulam Kerala FC",
@@ -33034,11 +33111,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340429,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762341424
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33047,8 +33138,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340429,
+        "extra": 540
+      },
       "slug": "gokulam-kerala-fc-mohammedan-sc",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -36009,7 +36108,7 @@
         "changeTimestamp": 1762286810
       },
       "hasGlobalHighlights": true,
-      "detailId": 5,
+      "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14947245,
       "varInProgress": {
@@ -40380,9 +40479,9 @@
       },
       "customId": "umnszmn",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Becamex Ho Chi Minh City FC",
@@ -40459,11 +40558,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340379,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1762340383
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40472,8 +40592,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340379,
+        "extra": 540
+      },
       "slug": "hai-phong-becamex-ho-chi-minh-city-fc",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -40573,9 +40701,9 @@
       },
       "customId": "Emnshlbc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Ninh Bình FC",
@@ -40652,11 +40780,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340392,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762341559
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40665,8 +40807,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340392,
+        "extra": 540
+      },
       "slug": "ninh-binh-fc-song-lam-nghe-an",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -40766,9 +40916,9 @@
       },
       "customId": "vmnswmn",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SHB Đà Nẵng",
@@ -40845,11 +40995,41 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762340460,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "time.period1Start"
+        ],
+        "changeTimestamp": 1762340461
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40858,8 +41038,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762340460,
+        "extra": 540
+      },
       "slug": "shb-da-nang-cong-an-ho-chi-minh-city",
       "startTimestamp": 1762340400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
