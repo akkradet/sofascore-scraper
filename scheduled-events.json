@@ -912,9 +912,9 @@
       },
       "customId": "TkcsTzk",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "FC Bayern München",
@@ -992,16 +992,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "normaltime": 2
+      },
+      "time": {
+        "injuryTime1": 0,
+        "currentPeriodStartTimestamp": 1762969561
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1762965798
+        "changeTimestamp": 1762972267
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -1100,9 +1114,9 @@
       },
       "customId": "OhGsWowb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Fútbol Club Barcelona",
@@ -1177,14 +1191,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 0,
+        "currentPeriodStartTimestamp": 1762969569
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1762966149
+        "changeTimestamp": 1762972493
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4044,8 +4071,8 @@
       },
       "customId": "EUbsEVb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4127,26 +4154,29 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1762966029,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1762970181,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1762968247
+        "changeTimestamp": 1762970677
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -4159,14 +4189,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762966029,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1762970181,
         "extra": 540
       },
       "slug": "mauritania-tunisia",
       "startTimestamp": 1762965900,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4252,8 +4282,8 @@
       },
       "customId": "UTbsPVb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4333,31 +4363,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1762967388,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1762971131,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1762967482
+        "changeTimestamp": 1762971196
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4370,14 +4400,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762967388,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1762971131,
         "extra": 540
       },
       "slug": "peru-russia",
       "startTimestamp": 1762966800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10721,9 +10751,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1762972155
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15031370,
@@ -12069,8 +12104,8 @@
       },
       "customId": "kUsrU",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -12149,27 +12184,31 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1762966884,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1762970781,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1762968117
+        "changeTimestamp": 1762972426
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12180,14 +12219,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762966884,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1762970781,
         "extra": 540
       },
       "slug": "fc-hradec-kralove-fc-zbrojovka-brno",
       "startTimestamp": 1762966800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12731,9 +12770,9 @@
       },
       "customId": "CbbsIyc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SV Werder Bremen II U23",
@@ -12807,11 +12846,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762972246,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1762972250
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12820,8 +12880,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762972246,
+        "extra": 540
+      },
       "slug": "fc-altona-93-sv-werder-bremen-ii-u23",
       "startTimestamp": 1762972200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
