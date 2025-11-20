@@ -1221,9 +1221,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1763656852
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14734232,
@@ -5943,8 +5948,8 @@
       },
       "customId": "CJTbslHfc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6026,24 +6031,29 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 2,
-        "currentPeriodStartTimestamp": 1763652656
+        "currentPeriodStartTimestamp": 1763656593,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1763655493
+        "changeTimestamp": 1763659086
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6055,8 +6065,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1763656593,
+        "extra": 540
+      },
       "slug": "shabab-al-ahli-dubai-khor-fakkan",
       "startTimestamp": 1763652600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11157,7 +11175,7 @@
         ],
         "changeTimestamp": 1763651642
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14214783,
       "awayRedCards": 1,
@@ -11457,8 +11475,8 @@
       },
       "customId": "vUvsOAR",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -11538,37 +11556,32 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1763654460,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1763658060,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.normaltime",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart",
-          "time.period1Start"
+          "time.period2Start"
         ],
-        "changeTimestamp": 1763654609
+        "changeTimestamp": 1763658112
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11579,14 +11592,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1763654460,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1763658060,
         "extra": 540
       },
       "slug": "jdfs-alberts-fk-grobina",
       "startTimestamp": 1763654400,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12973,11 +12986,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1763659280
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1763659280
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
