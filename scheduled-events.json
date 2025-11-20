@@ -3450,10 +3450,11 @@
       },
       "customId": "fOsvP",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Bahia",
         "slug": "bahia",
@@ -3531,31 +3532,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "period2": 0,
-        "normaltime": 0
-      },
-      "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 2,
-        "period2": 0,
+        "period1": 0,
+        "period2": 2,
         "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 1,
+        "normaltime": 3
       },
       "time": {
         "injuryTime1": 4,
-        "currentPeriodStartTimestamp": 1763676665,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 7,
+        "currentPeriodStartTimestamp": 1763676665
       },
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1763676712
+        "changeTimestamp": 1763679946
       },
       "hasGlobalHighlights": true,
       "hasXg": true,
@@ -3568,16 +3569,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1763676665,
-        "extra": 540
-      },
       "slug": "fortaleza-bahia",
       "startTimestamp": 1763672400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3674,9 +3667,9 @@
       },
       "customId": "hOsGO",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Corinthians",
@@ -3754,16 +3747,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 3,
+        "currentPeriodStartTimestamp": 1763677807
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1763674620
+        "changeTimestamp": 1763680697
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -5748,9 +5755,9 @@
       },
       "customId": "bknskvEc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Nacional Asunción",
@@ -5822,14 +5829,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 0,
+        "currentPeriodStartTimestamp": 1763677850
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.injuryTime1",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1763675638
+        "changeTimestamp": 1763680641
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8773,6 +8795,9 @@
         "changeTimestamp": 1763589269
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15115714,
@@ -8996,6 +9021,9 @@
         "changeTimestamp": 1763589206
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15115710,
@@ -9324,8 +9352,8 @@
       },
       "customId": "uxcseFz",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9406,56 +9434,37 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1763676660,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1763679480
       },
       "changes": {
         "changes": [
           "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.normaltime",
-          "time.currentPeriodStart",
-          "time.period1Start"
+          "status.description"
         ],
-        "changeTimestamp": 1763676666
+        "changeTimestamp": 1763680190
       },
       "hasGlobalHighlights": false,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15115716,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1763676660,
-        "extra": 540
-      },
       "slug": "patriotas-boyaca-real-cartagena",
       "startTimestamp": 1763676600,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
