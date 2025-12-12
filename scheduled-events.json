@@ -13204,7 +13204,7 @@
         ],
         "changeTimestamp": 1765545792
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -15255,9 +15255,9 @@
       },
       "customId": "rVbswVb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Jordan",
@@ -15335,14 +15335,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 8,
+        "currentPeriodStartTimestamp": 1765549840
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.injuryTime1",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1765546167
+        "changeTimestamp": 1765553065
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15350,6 +15365,10 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15204054,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
       "slug": "jordan-iraq",
       "startTimestamp": 1765549800,
       "finalResultOnly": false,
@@ -23548,11 +23567,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1765552701
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765552701
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -27955,10 +27990,11 @@
       },
       "customId": "fLFgslLFg",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Bologna U20",
         "slug": "bologna-fc-u20-u20",
@@ -28034,47 +28070,38 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1765548199,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 5,
+        "currentPeriodStartTimestamp": 1765551199
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1765548202
+        "changeTimestamp": 1765551228
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14068558,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1765548199,
-        "extra": 540
-      },
       "slug": "milan-u20-bologna-u20",
       "startTimestamp": 1765544400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -28178,9 +28205,9 @@
       },
       "customId": "mLFgsqLFg",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Torino U20",
@@ -28256,17 +28283,44 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1765551669,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1765553074
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14068553,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1765551669,
+        "extra": 540
+      },
       "slug": "torino-u20-genoa-u20",
       "startTimestamp": 1765551600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30719,11 +30773,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1765553166
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765553166
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33076,8 +33146,8 @@
       },
       "customId": "EjksfwBc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -33152,23 +33222,25 @@
       },
       "homeScore": {
         "current": 1,
-        "display": 1
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1765547730,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1765551364,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765549448
+        "changeTimestamp": 1765553382
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33179,14 +33251,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1765547730,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1765551364,
         "extra": 540
       },
       "slug": "kudrivka-oleksandria",
       "startTimestamp": 1765546200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
