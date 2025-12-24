@@ -1948,7 +1948,7 @@
         "description": "AP",
         "type": "finished"
       },
-      "winnerCode": 1,
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Arsenal",
         "slug": "arsenal",
@@ -2026,34 +2026,36 @@
         }
       },
       "homeScore": {
-        "current": 9,
-        "display": 1,
+        "current": 1,
+        "display": -7,
         "period1": 0,
         "period2": 1,
         "normaltime": 1,
         "penalties": 8
       },
       "awayScore": {
-        "current": 8,
-        "display": 1,
+        "current": 1,
+        "display": -6,
         "period1": 0,
         "period2": 1,
         "normaltime": 1,
         "penalties": 7
       },
       "time": {
+        "injuryTime1": 2,
+        "injuryTime2": 9,
         "currentPeriodStartTimestamp": 1766523948
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "time.injuryTime1",
+          "time.injuryTime2",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1766563062
+        "changeTimestamp": 1766570032
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -2833,9 +2835,9 @@
       },
       "customId": "opfdsTiUd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Iğdır FK",
@@ -2912,22 +2914,48 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1766570445,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1766567771
+        "changeTimestamp": 1766571077
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15187144,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1766570445,
+        "extra": 540
+      },
       "slug": "aliaga-fk-igdir-fk",
       "startTimestamp": 1766570400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -4608,9 +4636,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1766570230
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14521428,
