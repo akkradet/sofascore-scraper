@@ -14820,9 +14820,9 @@
       },
       "customId": "CnbsEnb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Shamrock Rovers",
@@ -14907,7 +14907,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1770381062
       },
       "hasGlobalHighlights": false,
       "detailId": 1,
@@ -20382,9 +20387,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1770380523
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15352711,
@@ -30238,7 +30248,7 @@
         ],
         "changeTimestamp": 1770373375
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14214892,
       "slug": "persis-solo-psim-yogyakarta",
@@ -30353,9 +30363,9 @@
       },
       "customId": "OKAstOWd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Persib Bandung",
@@ -30430,17 +30440,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "injuryTime1": 3,
+        "currentPeriodStartTimestamp": 1770383095,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1770383284
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14214894,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1770383095,
+        "extra": 540
+      },
       "slug": "malut-united-fc-persib-bandung",
       "startTimestamp": 1770379200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -31165,10 +31204,11 @@
       },
       "customId": "pzwsrzw",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Fajr Sepasi FC",
         "slug": "fajr-sepasi-fc",
@@ -31244,49 +31284,39 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770375676,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1770379456
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
           "status.code",
           "status.description",
           "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1770375681
+        "changeTimestamp": 1770382579
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15402251,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1770375676,
-        "extra": 540
-      },
       "slug": "fajr-sepasi-fc-tractor-fc",
       "startTimestamp": 1770375600,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -31397,9 +31427,9 @@
       },
       "customId": "tkdsxLjc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sepahan S.C.",
@@ -31476,17 +31506,50 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770382980,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1770382985
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15402240,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1770382980,
+        "extra": 540
+      },
       "slug": "kheybar-khorramabad-fc-sepahanc",
       "startTimestamp": 1770382800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -32618,9 +32681,9 @@
       },
       "customId": "FQDshLFg",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Parma U20",
@@ -32772,17 +32835,59 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770382980,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "time.period1Start"
+        ],
+        "changeTimestamp": 1770383115
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14068645,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1770382980,
+        "extra": 540
+      },
       "slug": "sassuolo-u20-parma-u20",
       "startTimestamp": 1770382800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -33402,10 +33507,11 @@
       },
       "customId": "MmbsjNr",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Yokohama F. Marinos",
         "slug": "yokohama-f-marinos",
@@ -33496,19 +33602,16 @@
       },
       "time": {
         "injuryTime1": 6,
-        "currentPeriodStartTimestamp": 1770376243,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 5,
+        "currentPeriodStartTimestamp": 1770376243
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770377722
+        "changeTimestamp": 1770379257
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -33516,20 +33619,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15272830,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1770376243,
-        "extra": 540
-      },
       "slug": "machida-zelvia-yokohama-marinos",
       "startTimestamp": 1770372000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -34007,10 +34098,11 @@
       },
       "customId": "WmbsZmb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Kyoto Sanga FC",
         "slug": "kyoto-sanga-fc",
@@ -34100,16 +34192,16 @@
       },
       "time": {
         "injuryTime1": 2,
-        "currentPeriodStartTimestamp": 1770375961,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 5,
+        "currentPeriodStartTimestamp": 1770375961
       },
       "changes": {
         "changes": [
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770376779
+        "changeTimestamp": 1770379002
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34117,20 +34209,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15272831,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1770375961,
-        "extra": 540
-      },
       "slug": "kyoto-sanga-fc-vissel-kobe",
       "startTimestamp": 1770372000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -34230,10 +34310,11 @@
       },
       "customId": "Kmbsenp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "V-Varen Nagasaki",
         "slug": "v-varen-nagasaki",
@@ -34308,11 +34389,11 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 3,
@@ -34323,16 +34404,16 @@
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1770376067,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1770376067
       },
       "changes": {
         "changes": [
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770376799
+        "changeTimestamp": 1770379143
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34340,20 +34421,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15272832,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1770376067,
-        "extra": 540
-      },
       "slug": "v-varen-nagasaki-sanfrecce-hiroshima",
       "startTimestamp": 1770372000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -41056,9 +41125,9 @@
       },
       "customId": "NkbsUkb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Tanjong Pagar United",
@@ -41134,17 +41203,47 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
+      },
+      "time": {
+        "injuryTime1": 4,
+        "currentPeriodStartTimestamp": 1770382207,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1770383283
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14255505,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1770382207,
+        "extra": 540
+      },
       "slug": "geylang-international-tanjong-pagar-united",
       "startTimestamp": 1770378300,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -41563,6 +41662,9 @@
         "changeTimestamp": 1770306796
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14074326,
       "slug": "nk-aluminij-kidricevo-nk-olimpija-ljubljana",
@@ -45486,10 +45588,11 @@
       },
       "customId": "qnsxn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kongsvinger",
         "slug": "kongsvinger",
@@ -45569,48 +45672,253 @@
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1770375713,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1770375713
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1770377927
+        "changeTimestamp": 1770378490
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15494408,
+      "slug": "kongsvinger-hamkam",
+      "startTimestamp": 1770372000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Club Friendly Games",
+        "slug": "club-friendly-games",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 1468,
+          "country": {},
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "विश्व",
+              "bn": "বিশ্ব"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 1468,
+            "country": {},
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "विश्व",
+                "bn": "বিশ্ব"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 26771,
+          "hasPerformanceGraphFeature": false,
+          "id": 853,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 86,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडली गेम्स",
+            "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 87177
+      },
+      "customId": "onsmy",
+      "status": {
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Lillestrøm SK",
+        "slug": "lillestrom-sk",
+        "shortName": "Lillestrøm",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 23071,
+        "nameCode": "LSK",
+        "national": false,
+        "type": 0,
+        "id": 664,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليلساروم",
+            "ru": "СК Лиллестрем"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Stabæk Fotball",
+        "slug": "stabaek-fotball",
+        "shortName": "Stabæk",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 6201,
+        "nameCode": "STA",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1162,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ستايبك",
+            "ru": "ФК Стабек"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1770382746,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1770382746
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15494433,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
       "statusTime": {
         "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1770375713,
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1770382746,
         "extra": 540
       },
-      "slug": "kongsvinger-hamkam",
-      "startTimestamp": 1770372000,
-      "lastPeriod": "period2",
+      "slug": "stabaek-fotball-lillestrom-sk",
+      "startTimestamp": 1770382800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
