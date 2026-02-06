@@ -10102,8 +10102,8 @@
       },
       "customId": "vucstbd",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -10182,27 +10182,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1,
-        "normaltime": 1
-      },
-      "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 2,
+        "period1": 1,
+        "period2": 1,
         "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 1,
+        "normaltime": 3
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1770357883
+        "currentPeriodStartTimestamp": 1770361783,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1770360803
+        "changeTimestamp": 1770364280
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -10214,8 +10218,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1770361783,
+        "extra": 540
+      },
       "slug": "wellington-phoenix-melbourne-victory",
       "startTimestamp": 1770357600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -10407,9 +10419,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1770363883
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14671724,
