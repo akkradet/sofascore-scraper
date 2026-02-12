@@ -16843,9 +16843,9 @@
       },
       "customId": "Nmbsadd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Pohang Steelers",
@@ -16917,14 +16917,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "injuryTime1": 1,
+        "currentPeriodStartTimestamp": 1770890435
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1770886980
+        "changeTimestamp": 1770893255
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -16932,6 +16946,10 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15296008,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
       "slug": "pohang-steelers-gamba-osaka",
       "startTimestamp": 1770890400,
       "finalResultOnly": false,
@@ -17119,6 +17137,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15296004,
@@ -25533,14 +25552,9 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.normaltime",
-          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1770836221
+        "changeTimestamp": 1770890882
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -34181,11 +34195,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1770893468
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1770893468
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
