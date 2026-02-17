@@ -1446,8 +1446,8 @@
       },
       "customId": "onbsEzc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1525,27 +1525,29 @@
         "current": 1,
         "display": 1,
         "period1": 1,
-        "normaltime": 0
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1771365715,
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 4,
+        "currentPeriodStartTimestamp": 1771369573,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1771367796
+        "changeTimestamp": 1771369711
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -1560,14 +1562,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1771365715,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1771369573,
         "extra": 540
       },
       "slug": "carabobo-huachipato",
       "startTimestamp": 1771365600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -1747,9 +1749,15 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1771369771
       },
       "hasGlobalHighlights": false,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15253533,
@@ -1938,9 +1946,15 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1771370350
       },
       "hasGlobalHighlights": false,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15253526,
@@ -6570,10 +6584,11 @@
       },
       "customId": "ixcsZXbe",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Alianza Valledupar FC",
         "slug": "alianza-futbol-club",
@@ -6664,16 +6679,16 @@
       },
       "time": {
         "injuryTime1": 4,
-        "currentPeriodStartTimestamp": 1771365944,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1771365944
       },
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1771365963
+        "changeTimestamp": 1771369049
       },
       "hasGlobalHighlights": true,
       "hasXg": true,
@@ -6682,20 +6697,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15367354,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1771365944,
-        "extra": 540
-      },
       "slug": "alianza-valledupar-fc-cucuta-deportivo",
       "startTimestamp": 1771362000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -6805,9 +6808,9 @@
       },
       "customId": "qxcsvMK",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 81,
+        "description": "Suspended",
+        "type": "suspended"
       },
       "homeTeam": {
         "name": "Jaguares de Córdoba",
@@ -6883,14 +6886,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1771369241
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1771366556
+        "changeTimestamp": 1771370705
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -14917,7 +14934,7 @@
         ],
         "changeTimestamp": 1771365158
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15037,9 +15054,9 @@
       },
       "customId": "DcdsLygc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Tigre",
@@ -15113,20 +15130,37 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1771368309
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1771367612
+        "changeTimestamp": 1771371139
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15329638,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
       "slug": "claypole-tigre",
       "startTimestamp": 1771368300,
       "finalResultOnly": false,
@@ -16120,12 +16154,14 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "الاهلي",
+            "ar": "الأهلي",
             "ru": "Аль-Ахли  Кса",
             "hi": "अल-अहली",
             "bn": "আল-আহলি"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "الأهلي"
+          }
         }
       },
       "awayTeam": {
@@ -17236,7 +17272,9 @@
             "hi": "अल-इतिहाद",
             "bn": "আল-ইত্তিহাদ"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "الاتحاد"
+          }
         }
       },
       "homeScore": {
@@ -19740,9 +19778,9 @@
       },
       "customId": "lFnsHcdc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sampaio Corrêa-RJ",
@@ -19817,18 +19855,48 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1771369200,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1771371086
       },
       "hasGlobalHighlights": false,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15462148,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1771369200,
+        "extra": 540
+      },
       "slug": "sampaio-correa-rj-desportiva-ferroviaria",
       "startTimestamp": 1771369200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -24110,10 +24178,11 @@
       },
       "customId": "YppbsGuuc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Deportivo Achuapa",
         "slug": "deportivo-achuapa",
@@ -24189,48 +24258,38 @@
         "current": 1,
         "display": 1,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1771365973,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1771365972
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1771366231
+        "changeTimestamp": 1771369077
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15335986,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1771365973,
-        "extra": 540
-      },
+      "awayRedCards": 1,
       "slug": "deportivo-achuapa-deportivo-guastatoya",
       "startTimestamp": 1771362000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
