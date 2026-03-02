@@ -19197,7 +19197,7 @@
         ],
         "changeTimestamp": 1772387662
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -19424,7 +19424,7 @@
         ],
         "changeTimestamp": 1772387637
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -20109,7 +20109,7 @@
         ],
         "changeTimestamp": 1772387745
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -31625,9 +31625,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1772449428
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14038612,
@@ -39030,10 +39035,11 @@
       },
       "customId": "xNisqjUb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "South Korea",
         "slug": "south-korea",
@@ -39107,34 +39113,38 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772442683
+        "currentPeriodStartTimestamp": 1772443221
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1772445383
+        "changeTimestamp": 1772449066
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14326657,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "iran-south-korea",
       "startTimestamp": 1772442000,
       "finalResultOnly": false,
@@ -45870,6 +45880,9 @@
         "changeTimestamp": 1772417189
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15188428,
       "homeRedCards": 1,
@@ -47198,6 +47211,9 @@
         "changeTimestamp": 1772378448
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225213,
       "slug": "banik-ostrava-sk-dynamo-ceske-budejovice",
@@ -47418,6 +47434,9 @@
         "changeTimestamp": 1772378449
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225210,
       "slug": "fc-sellier-and-bellot-vlasim-fc-silon-taborsko",
@@ -52561,12 +52580,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "cardsCode"
         ],
-        "changeTimestamp": 1772384116
+        "changeTimestamp": 1772450039
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -59718,6 +59734,9 @@
         "changeTimestamp": 1772380788
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14068680,
       "slug": "atalanta-u20-inter-u20",
@@ -61521,7 +61540,9 @@
         "changeTimestamp": 1772409726
       },
       "hasGlobalHighlights": true,
-      "hasEventPlayerStatistics": false,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15336383,
@@ -72851,9 +72872,9 @@
       },
       "customId": "ayfdsbyfd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SC Farense U23",
@@ -72927,17 +72948,48 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1772451079,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1772451079
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15339449,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1772451079,
+        "extra": 540
+      },
       "slug": "vizela-u23-sc-farense-u23",
       "startTimestamp": 1772451000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -74703,215 +74755,6 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15393583,
       "slug": "al-arabi-sa-jeddah",
-      "startTimestamp": 1772477100,
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "club"
-        ],
-        "level": [
-          "pro"
-        ],
-        "gender": [
-          "M"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Division 1",
-        "slug": "division-1",
-        "category": {
-          "name": "Saudi Arabia",
-          "slug": "saudi-arabia",
-          "sport": {
-            "name": "Football",
-            "slug": "football",
-            "id": 1
-          },
-          "country": {
-            "alpha2": "SA",
-            "alpha3": "SAU",
-            "name": "Saudi Arabia",
-            "slug": "saudi-arabia"
-          },
-          "id": 310,
-          "flag": "saudi-arabia",
-          "alpha2": "SA",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "السعودية",
-              "bn": "সৌদি আরব",
-              "hi": "सऊदी अरब",
-              "ru": "Саудовская Аравия"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Saudi 1st Division",
-          "slug": "division-1",
-          "category": {
-            "name": "Saudi Arabia",
-            "slug": "saudi-arabia",
-            "sport": {
-              "name": "Football",
-              "slug": "football",
-              "id": 1
-            },
-            "country": {
-              "alpha2": "SA",
-              "alpha3": "SAU",
-              "name": "Saudi Arabia",
-              "slug": "saudi-arabia"
-            },
-            "id": 310,
-            "flag": "saudi-arabia",
-            "alpha2": "SA",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "السعودية",
-                "bn": "সৌদি আরব",
-                "hi": "सऊदी अरब",
-                "ru": "Саудовская Аравия"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 7184,
-          "hasPerformanceGraphFeature": false,
-          "country": {},
-          "id": 2120,
-          "hasEventPlayerStatistics": true,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "الدوري السعودي الدرجة الأولى",
-              "bn": "সৌদি ফাস্ট ডিভিশন",
-              "hi": "सऊदी फर्स्ट डिवीज़न"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 47092,
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "القسم الأول",
-            "bn": "ডিভিশন 1",
-            "hi": "डिवीजन 1"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "season": {
-        "name": "Division 1 25/26",
-        "year": "25/26",
-        "editor": false,
-        "seasonCoverageInfo": {
-          "editorCoverageLevel": 3
-        },
-        "id": 80448
-      },
-      "roundInfo": {
-        "round": 25
-      },
-      "customId": "JlrbszwQg",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Al Diriyah",
-        "slug": "al-diraiyah",
-        "shortName": "Al Diriyah",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 3856,
-        "nameCode": "DIR",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "country": {
-          "alpha2": "SA",
-          "alpha3": "SAU",
-          "name": "Saudi Arabia",
-          "slug": "saudi-arabia"
-        },
-        "id": 853574,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "نادي الدرعية"
-          },
-          "shortNameTranslation": {
-            "ar": "الدرعية"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Al Batin",
-        "slug": "al-batin",
-        "shortName": "Al Batin",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 6904,
-        "nameCode": "BAT",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "country": {
-          "alpha2": "SA",
-          "alpha3": "SAU",
-          "name": "Saudi Arabia",
-          "slug": "saudi-arabia"
-        },
-        "id": 168084,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "نادي الباطن",
-            "bn": "আল-বাতিন",
-            "hi": "अल-बतिन",
-            "ru": "Аль-Батин"
-          },
-          "shortNameTranslation": {
-            "ar": "الباطن"
-          }
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "detailId": 1,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15393585,
-      "slug": "al-diriyah-al-batin",
       "startTimestamp": 1772477100,
       "finalResultOnly": false,
       "feedLocked": false,
@@ -76867,6 +76710,9 @@
         "changeTimestamp": 1772387867
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15195306,
       "slug": "ifk-skovde-fk-djurgardens-if",
@@ -77089,6 +76935,9 @@
         "changeTimestamp": 1772373215
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15195319,
       "slug": "varbergs-bois-halmstads-bk",
@@ -82800,9 +82649,9 @@
       },
       "customId": "fwBcsaMCc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SC Poltava",
@@ -82870,17 +82719,43 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1772449309,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1772451343
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14090569,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1772449309,
+        "extra": 540
+      },
       "slug": "sc-poltava-kudrivka",
       "startTimestamp": 1772449200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
