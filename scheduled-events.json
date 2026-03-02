@@ -1842,7 +1842,7 @@
         ],
         "changeTimestamp": 1772401019
       },
-      "hasGlobalHighlights": true,
+      "hasGlobalHighlights": false,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -6388,7 +6388,7 @@
         ],
         "changeTimestamp": 1772370591
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -9814,7 +9814,7 @@
         ],
         "changeTimestamp": 1772395094
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -10041,7 +10041,7 @@
         ],
         "changeTimestamp": 1772373247
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -27882,7 +27882,7 @@
         ],
         "changeTimestamp": 1772371542
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -28106,7 +28106,7 @@
         ],
         "changeTimestamp": 1772380546
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -31743,10 +31743,11 @@
       },
       "customId": "VcdsAdn",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Daejeon Hana Citizen",
         "slug": "daejeon-hana-citizen",
@@ -31822,36 +31823,35 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1772427660
+        "currentPeriodStartTimestamp": 1772431583
       },
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1772430663
+        "changeTimestamp": 1772435128
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15372948,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "streamContentId": 2107681,
       "streamContentGeoRestrictions": [
         "BG",
@@ -31972,10 +31972,11 @@
       },
       "customId": "UKAcsCWKc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Chungnam Asan FC",
         "slug": "chungnam-asan-fc",
@@ -32049,34 +32050,37 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
-        "injuryTime1": 4,
-        "currentPeriodStartTimestamp": 1772430558
+        "currentPeriodStartTimestamp": 1772431500
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1772430562
+        "changeTimestamp": 1772434903
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15403795,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "chungnam-asan-fc-paju-frontier-fc",
       "startTimestamp": 1772427600,
       "finalResultOnly": false,
@@ -32188,9 +32192,9 @@
       },
       "customId": "Rcdsbdd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Busan I Park",
@@ -32265,17 +32269,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "time": {
+        "injuryTime1": 4,
+        "currentPeriodStartTimestamp": 1772440503,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1772440745
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15403796,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1772440503,
+        "extra": 540
+      },
       "slug": "seongnam-fc-busanpark",
       "startTimestamp": 1772436600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -32487,7 +32520,7 @@
         ],
         "changeTimestamp": 1772370033
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -32926,7 +32959,7 @@
         ],
         "changeTimestamp": 1772371824
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -33150,7 +33183,7 @@
         ],
         "changeTimestamp": 1772373627
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -39897,6 +39930,9 @@
         "changeTimestamp": 1772384179
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14530076,
       "slug": "sabah-fk-qarabag-fk",
@@ -47143,7 +47179,7 @@
         ],
         "changeTimestamp": 1772378448
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225213,
       "slug": "banik-ostrava-sk-dynamo-ceske-budejovice",
@@ -47363,7 +47399,7 @@
         ],
         "changeTimestamp": 1772378449
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225210,
       "slug": "fc-sellier-and-bellot-vlasim-fc-silon-taborsko",
@@ -48662,7 +48698,7 @@
         ],
         "changeTimestamp": 1772396835
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -56951,6 +56987,9 @@
         "changeTimestamp": 1772378932
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303158,
       "slug": "pontedera-vis-pesaro",
@@ -57184,6 +57223,9 @@
         "changeTimestamp": 1772389962
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303149,
       "slug": "ravenna-arezzo",
@@ -57416,6 +57458,9 @@
         "changeTimestamp": 1772389587
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303153,
       "slug": "guidonia-montecelio-1937-gubbio",
@@ -57646,6 +57691,9 @@
         "changeTimestamp": 1772390028
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303157,
       "slug": "campobasso-fc-ternana",
@@ -57867,17 +57915,14 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1772371572
+        "changeTimestamp": 1772436988
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303538,
       "slug": "potenza-calcio-benevento",
@@ -58109,6 +58154,9 @@
         "changeTimestamp": 1772371305
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303540,
       "awayRedCards": 1,
@@ -58566,6 +58614,9 @@
         "changeTimestamp": 1772384588
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14303535,
       "awayRedCards": 1,
@@ -59338,6 +59389,9 @@
         "changeTimestamp": 1772365938
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14068674,
       "slug": "roma-u20-milan-u20",
@@ -64264,6 +64318,9 @@
         "changeTimestamp": 1772369571
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14041320,
       "homeRedCards": 1,
@@ -64487,6 +64544,9 @@
         "changeTimestamp": 1772378834
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14041322,
       "awayRedCards": 1,
@@ -67458,9 +67518,9 @@
       },
       "customId": "Zctshhy",
       "status": {
-        "code": 80,
-        "description": "Interrupted",
-        "type": "interrupted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "AD Os Limianos",
@@ -67538,22 +67598,9 @@
           }
         }
       },
-      "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
-      },
-      "time": {
-        "periodLength": 2700,
-        "overtimeLength": 900,
-        "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772382006
-      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
@@ -67570,7 +67617,7 @@
           "time.overtimeLength",
           "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1772382066
+        "changeTimestamp": 1772431489
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -75275,6 +75322,9 @@
         "changeTimestamp": 1772375283
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14195537,
       "slug": "balestier-khalsa-tanjong-pagar-united",
@@ -76572,6 +76622,9 @@
         "changeTimestamp": 1772372951
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15195307,
       "slug": "falkenbergs-ff-if-brommapojkarna",
@@ -78993,6 +79046,43 @@
         "userCount": 1643,
         "nameCode": "CRO",
         "national": false,
+        "parentTeam": {
+          "name": "Charlotte FC",
+          "slug": "charlotte-fc",
+          "shortName": "Charlotte",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 16239,
+          "nameCode": "CHA",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 404108,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#3180ff",
+            "secondary": "#010101",
+            "text": "#010101"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "شارلوت",
+              "hi": "शेर्लोट एफसी",
+              "ru": "Шарлотт"
+            },
+            "shortNameTranslation": {}
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -79252,6 +79342,43 @@
         "nameCode": "TTO",
         "disabled": false,
         "national": false,
+        "parentTeam": {
+          "name": "San Jose Earthquakes",
+          "slug": "san-jose-earthquakes",
+          "shortName": "San Jose",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 10110,
+          "nameCode": "SJ",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 21825,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#3366ff",
+            "secondary": "#000000",
+            "text": "#000000"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سان خوسيه ارضكويك",
+              "hi": "सान जोसे अर्थक्वैक्स",
+              "ru": "Сан Хосе Эртквейкс"
+            },
+            "shortNameTranslation": {}
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -79730,6 +79857,43 @@
         "userCount": 1728,
         "nameCode": "RMO",
         "national": false,
+        "parentTeam": {
+          "name": "Real Salt Lake",
+          "slug": "real-salt-lake",
+          "shortName": "Salt Lake",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 10882,
+          "nameCode": "RSL",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 5133,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#cc0000",
+            "secondary": "#ffff00",
+            "text": "#ffff00"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "ريال سالت ليك",
+              "hi": "रियल सॉल्ट लेक",
+              "ru": "Реал Солт Лейк"
+            },
+            "shortNameTranslation": {}
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -79767,6 +79931,43 @@
         "userCount": 1759,
         "nameCode": "NOR",
         "national": false,
+        "parentTeam": {
+          "name": "FC Dallas",
+          "slug": "fc-dallas",
+          "shortName": "Dallas",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 14966,
+          "nameCode": "DAL",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 2512,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#ff0000",
+            "secondary": "#cc0000",
+            "text": "#cc0000"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "نادي كرة القدم دالاس",
+              "hi": "ऍफ़सी डल्लास",
+              "ru": "ФК Даллас"
+            },
+            "shortNameTranslation": {}
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -80790,6 +80991,44 @@
         "nameCode": "VEN",
         "disabled": false,
         "national": false,
+        "parentTeam": {
+          "name": "LA Galaxy",
+          "slug": "la-galaxy",
+          "shortName": "LA Galaxy",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 36379,
+          "nameCode": "LAG",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 2513,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#ffffff",
+            "secondary": "#ffcc00",
+            "text": "#ffcc00"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إل إيه غالاكسي",
+              "ru": "Лос Анджелес Гэлэкси"
+            },
+            "shortNameTranslation": {
+              "ar": "إل إيه غالاكسي"
+            }
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -81338,6 +81577,44 @@
         "userCount": 2432,
         "nameCode": "TAD",
         "national": false,
+        "parentTeam": {
+          "name": "Seattle Sounders FC",
+          "slug": "seattle-sounders-fc",
+          "shortName": "Seattle",
+          "gender": "M",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "userCount": 31083,
+          "nameCode": "SEA",
+          "disabled": false,
+          "national": false,
+          "type": 0,
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 22009,
+          "subTeams": [],
+          "teamColors": {
+            "primary": "#33cc00",
+            "secondary": "#0066ff",
+            "text": "#0066ff"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سياتل ساونديرز إف سي",
+              "ru": "Сиэтл Саундерс"
+            },
+            "shortNameTranslation": {
+              "ar": "سياتل"
+            }
+          }
+        },
         "type": 0,
         "country": {
           "alpha2": "US",
@@ -85435,7 +85712,7 @@
         ],
         "changeTimestamp": 1772410089
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
